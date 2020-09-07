@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.c070e1ea.chunk.css",
+    "main.js": "/portfolio/static/js/main.a8a45daf.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.a8a45daf.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
+    "static/js/2.01853480.chunk.js": "/portfolio/static/js/2.01853480.chunk.js",
+    "static/js/2.01853480.chunk.js.map": "/portfolio/static/js/2.01853480.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.2040044e7c610b5563822a0e74730103.js": "/portfolio/precache-manifest.2040044e7c610b5563822a0e74730103.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.c070e1ea.chunk.css.map": "/portfolio/static/css/main.c070e1ea.chunk.css.map",
+    "static/js/2.01853480.chunk.js.LICENSE.txt": "/portfolio/static/js/2.01853480.chunk.js.LICENSE.txt",
+    "static/media/Lights-Out.png": "/portfolio/static/media/Lights-Out.c679d8a0.png",
+    "static/media/main.css": "/portfolio/static/media/download.95c7767d.png",
+    "static/media/omnifood.png": "/portfolio/static/media/omnifood.01bab7d2.png",
+    "static/media/resume-snippit.png": "/portfolio/static/media/resume-snippit.3ea43197.png",
+    "static/media/santibout_resume.pdf": "/portfolio/static/media/santibout_resume.c4fe0a4d.pdf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.209c2d7e.js",
+    "static/js/2.01853480.chunk.js",
+    "static/css/main.c070e1ea.chunk.css",
+    "static/js/main.a8a45daf.chunk.js"
+  ]
+}
