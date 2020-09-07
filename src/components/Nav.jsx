@@ -49,7 +49,7 @@ const Nav = (props) => {
       </div>
       <div className="left-two">
         <ul>
-          <Link to="/" className={`${path === "/" ? "active-li" : ""}`}>
+          <Link to="/portfolio" className={`${path === "/" ? "active-li" : ""}`}>
             <li>
               <i className="fas fa-user"></i>
               <p className="a-name">about</p>

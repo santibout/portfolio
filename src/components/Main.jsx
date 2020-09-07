@@ -29,7 +29,7 @@ const Main = () => {
                 >
                   <div className="main-right">
                     <Switch location={location}>
-                      <Route exact path="/portfolio" component={() => <MainRight />} />
+                      <Route path="/portfolio" component={() => <MainRight />} />
                       <Route path="/contact" component={() => <Contact />} />
                       <Route path="/projects" component={() => <Projects />} />
                       <Route path="/login" component={() => <Login />} />
