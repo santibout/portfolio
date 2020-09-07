@@ -1,0 +1,46 @@
+#work-history {
+  /* padding-top: 100px; */
+}
+#work-history hr {
+  width: 60vw;
+}
+#work-history i {
+  color: rgb(232, 65, 24);
+  font-size: 160%;
+  margin-right: 20px;
+}
+#work-history h2 {
+  display: inline-block;
+}
+.work-item {
+  display: flex;
+  border: solid 1px #6a7a7c;
+  margin-top: 50px;
+  padding: 20px;
+}
+.work-date {
+  color: rgb(232, 65, 24);
+  padding: 10px;
+}
+
+.work-title {
+  font-weight: 400;
+  margin: 20px 0;
+}
+.work-place {
+  font-weight: 300;
+  margin: 15px 0;
+}
+.work-description {
+  color: #6a7a7c;
+}
+.work-img img {
+  margin-top: 20px;
+  position: relative;
+}
+.rescale {
+    transform: scale(2);
+    position: absolute;
+    top: 25%;
+    right: 50%;
+  }
