@@ -29,12 +29,31 @@ const Main = () => {
                 >
                   <div className="main-right">
                     <Switch location={location}>
-                      <Route path="/portfolio" component={() => <MainRight />} />
-                      <Route path="/portfolio/contact" component={() => <Contact />} />
-                      <Route path="/portfolio/projects" component={() => <Projects />} />
-                      <Route path="/portfolio/login" component={() => <Login />} />
-                      <Route path="/portfolio/resume" component={() => <Resume />} />
-                      <Route path="/portfolio/register" component={() => <Register />} />
+                      <Route
+                        exact
+                        path="/portfolio"
+                        component={() => <MainRight />}
+                      />
+                      <Route
+                        path="/portfolio/contact"
+                        component={() => <Contact />}
+                      />
+                      <Route
+                        path="/portfolio/projects"
+                        component={() => <Projects />}
+                      />
+                      <Route
+                        path="/portfolio/login"
+                        component={() => <Login />}
+                      />
+                      <Route
+                        path="/portfolio/resume"
+                        component={() => <Resume />}
+                      />
+                      <Route
+                        path="/portfolio/register"
+                        component={() => <Register />}
+                      />
                       <Route render={() => <div>Not Found</div>} />
                     </Switch>
                   </div>
