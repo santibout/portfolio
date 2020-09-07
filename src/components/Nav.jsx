@@ -49,15 +49,15 @@ const Nav = (props) => {
       </div>
       <div className="left-two">
         <ul>
-          <Link to="/portfolio" className={`${path === "/" ? "active-li" : ""}`}>
+          <Link to="/portfolio" className={`${path === "/portfolio" ? "active-li" : ""}`}>
             <li>
               <i className="fas fa-user"></i>
               <p className="a-name">about</p>
             </li>
           </Link>
           <Link
-            to="/contact"
-            className={`${path === "/contact" ? "active-li" : ""}`}
+            to="/portfolio/contact"
+            className={`${path === "/portfolio/contact" ? "active-li" : ""}`}
           >
             <li>
               <i className="fas fa-phone"></i>
@@ -65,23 +65,23 @@ const Nav = (props) => {
             </li>
           </Link>
           <Link
-            to="/resume"
-            className={`${path === "/resume" ? "active-li" : ""}`}
+            to="/portfolio/resume"
+            className={`${path === "/portfolio/resume" ? "active-li" : ""}`}
           >
             <li>
               <i class="far fa-file-alt"></i>
               <p className="a-name">resume</p>
             </li>
           </Link>
-          <Link to="/blog" className={`${path === "/blog" ? "active-li" : ""}`}>
+          {/* <Link to="/portfolio//blog" className={`${path === "/portfolio/blog" ? "active-li" : ""}`}>
             <li>
               <i class="fas fa-pen-square"></i>
               <p className="a-name">blog</p>
             </li>
-          </Link>
+          </Link> */}
           <Link
-            to="/projects"
-            class={`${path === "/projects" ? "active-li" : ""}`}
+            to="/portfolio/projects"
+            class={`${path === "/portfolio/projects" ? "active-li" : ""}`}
           >
             <li>
               <i class="far fa-file-code"></i>

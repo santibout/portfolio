@@ -15,16 +15,6 @@ const Resume = () => {
 
           <img className="resume-snippit" src={resumeSnippit} alt="my resume" />
         </div>
-        <div className="row">
-          <div className="resume-row-left header">
-            <i class="fas fa-briefcase"></i>
-            <h3>Experience</h3>
-          </div>
-          <div className="resume-row-left header">
-            <i class="fas fa-briefcase"></i>
-            <h3>Education</h3>
-          </div>
-        </div>
       </div>
     </section>
   );

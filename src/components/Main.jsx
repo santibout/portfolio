@@ -30,11 +30,11 @@ const Main = () => {
                   <div className="main-right">
                     <Switch location={location}>
                       <Route path="/portfolio" component={() => <MainRight />} />
-                      <Route path="/contact" component={() => <Contact />} />
-                      <Route path="/projects" component={() => <Projects />} />
-                      <Route path="/login" component={() => <Login />} />
-                      <Route path="/resume" component={() => <Resume />} />
-                      <Route path="/register" component={() => <Register />} />
+                      <Route path="/portfolio/contact" component={() => <Contact />} />
+                      <Route path="/portfolio/projects" component={() => <Projects />} />
+                      <Route path="/portfolio/login" component={() => <Login />} />
+                      <Route path="/portfolio/resume" component={() => <Resume />} />
+                      <Route path="/portfolio/register" component={() => <Register />} />
                       <Route render={() => <div>Not Found</div>} />
                     </Switch>
                   </div>
