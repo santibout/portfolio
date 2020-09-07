@@ -1,0 +1,261 @@
+.main-container {
+  display: flex;
+  height: 100%;
+  position: relative;
+}
+.main-left {
+  background-color: rgb(29, 30, 32);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  text-align: center;
+  width: 5vw;
+}
+.left-one {
+  width: 100%;
+  height: 20vh;
+}
+.fa-bars {
+  background-color: #e84118;
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+}
+.left-two {
+  height: 40vh;
+  width: 100%;
+  margin-bottom: 100%;
+}
+.left-two ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+.left-two li {
+  list-style: none;
+  margin-top: 15px;
+}
+.active-li i {
+  color: #e84118 !important;
+  font-size: 150%;
+}
+.left-two a:link,
+.left-two a:visited {
+  color: #fff;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  display: none;
+}
+.fade-exit {
+  opacity: 1;
+  /* display: none; */
+}
+.fade-exit.fade-exit-leave {
+  opacity: 0;
+}
+@keyframes test-animation {
+  0% {
+    transform: scaleX(1);
+  }
+
+  50% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes text-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.main-middle {
+  width: 30vw;
+}
+.main-container-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),
+    url("../static/download.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  /* border: 3px solid rgb(29, 30, 32); */
+  height: 100%;
+  position: relative;
+  transform: scaleY(1.05);
+  width: 100%;
+}
+/* .main-container-img:active {
+  transform: scaleY(1);
+} */
+.main-right {
+  animation: test-animation 0.75s;
+  transform-origin: left;
+  background-color: rgb(29, 30, 32);
+  height: 100%;
+  overflow: hidden;
+  padding: 0 5%;
+  position: relative;
+  width: 65vw;
+}
+.main-right p,
+.main-right h1,
+.main-right h2,
+.main-right h3,
+.main-right hr,
+.main-right div {
+  animation: text-fade 0.7s;
+}
+.right-scrollable {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  position: relative;
+  padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
+  box-sizing: content-box; /* So the width will be 100% + 17px */
+}
+.right-main {
+  height: 100%;
+  margin-top: 30px;
+}
+.two {
+  height: 100%;
+}
+.info {
+  bottom: 0;
+  background-color: rgba(29, 30, 32, 0.3);
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  padding: 20px 0;
+}
+.info h1 {
+  font-weight: 300;
+}
+.info h3 {
+  color: #e84118;
+}
+.main-container-right {
+  display: inline-block;
+  left: 45%;
+  position: absolute;
+  top: 5%;
+  width: 40%;
+}
+.main-right p {
+  width: 85%;
+  line-height: 1.3;
+}
+/* .inside-right {
+  width: 80%;
+  border: solid red;
+  height: 100%;
+  position: absolute;
+} */
+.about-me h1 {
+  font-weight: 300;
+}
+.about-me h3 {
+  font-size: 90%;
+  font-weight: 400;
+  color: #e84118;
+  margin-top: 15px;
+}
+.about-me p {
+  font-size: 80%;
+  color: #6a7a7c;
+  line-height: 1.5;
+  margin-top: 15px;
+}
+
+.services {
+  margin-top: 15px;
+}
+h2 {
+  font-weight: 300;
+}
+
+.two-d {
+  display: inline-block;
+  margin-top: 5px;
+  width: 50%;
+}
+.two-d h3 {
+  font-weight: 200;
+}
+.two-d p {
+  font-size: 80%;
+  color: #6a7a7c;
+  line-height: 1.3;
+  margin-top: 10px;
+  width: 80%;
+}
+.services i {
+  color: #e84118;
+  font-size: 140%;
+}
+.main-right {
+  display: flex;
+}
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+.main-middle i {
+  margin: 10px;
+  font-size: 130%;
+}
+.main-middle a:active,
+.main-middle a:visited,
+.main-middle a:link {
+  color: white;
+}
+.main-middle-row i {
+  font-size: 180%;
+}
+.main-table {
+  width: 100%;
+}
+.main-table tr th {
+  margin-top: 20px;
+  position: relative;
+  width: 100%;
+}
+.main-table tr th p {
+  max-width: 12%;
+  text-align: left;
+}
+.main-table .bar-container {
+  width: 88%;
+  border-radius: 25px;
+  position: absolute;
+  left: 12%;
+  top: 0;
+  height: 100%;
+}
+.main-table .bar-container div {
+  height: 100%;
+  border-radius: 25px;
+}
+.main-table div p {
+  float: right;
+}

@@ -1,0 +1,93 @@
+.fa-bars:hover {
+  border: 2px solid #f3f3f3;
+}
+.two {
+  margin-top: 20px;
+}
+.left-two {
+  position: relative;
+}
+.left-two li {
+  z-index: 3;
+}
+.menu-collasped a:link,
+.menu-collasped a:visited {
+  color: #fff;
+  list-style: none;
+  text-decoration: none;
+}
+.menu-collasped a:hover {
+  color: #e84118;
+}
+.left-two li:hover .a-name {
+  /* display: block; */
+  visibility: visible;
+}
+.download i:hover {
+  color: #e84118;
+}
+.download i:hover + .a-name {
+  visibility: visible;
+}
+.a-name {
+  visibility: hidden;
+  font-size: 80%;
+  padding: 0 15px;
+  text-decoration: none;
+}
+.menu-collasped {
+  font-size: 80%;
+  margin-top: 20px;
+  opacity: 0;
+}
+.menu-collasped ul {
+  list-style: none;
+}
+.menu-collasped li {
+  margin-top: 10px;
+}
+.download {
+  padding-top: 80px;
+}
+.left-two ul li:last-child:hover {
+  color: #e84118;
+}
+.left-two ul li:last-child:hover > p {
+  color: #fff;
+}
+.menu-collasped li:hover {
+  color: #e84118;
+}
+.menu-animate {
+  opacity: 1;
+  animation: menu-drop 1s;
+}
+.left-two ul .download p {
+  font-size: 70%;
+  padding: 5px;
+}
+@keyframes menu-drop {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.menu-remove-animate {
+  animation: menu-remove 1s;
+}
+@keyframes menu-remove {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+}
+.left-two a {
+  text-decoration: none;
+}

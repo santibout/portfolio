@@ -1,0 +1,115 @@
+#projects {
+  margin-top: 30px;
+  overflow: auto;
+  width: 100%;
+}
+.projects {
+  display: absolute;
+  width: 100%;
+  height: 100%;
+  /* overflow-y: scroll; */
+}
+.projects h1 {
+  text-align: center;
+  font-weight: 200;
+  margin-bottom: 50px;
+}
+.project-row {
+  margin-top: 30px;
+  display: flex;
+}
+.project-div-left,
+.project-div-right {
+  width: 50%;
+  height: 100%;
+  margin: 10px;
+}
+
+.list-item {
+  border: 3px solid rgb(141, 139, 139);
+  display: flex;
+  width: 80%;
+  height: 100%;
+  content: "";
+  right: -10%;
+  top: 0;
+  background-color: inherit;
+  -webkit-transform: skewX(10deg);
+  -moz-transform: skewX(10deg);
+  -ms-transform: skewX(10deg);
+  transform: skewX(10deg);
+  margin: 0 auto;
+  /* border: 1px solid #e84118; */
+}
+.card-container:hover .list-item {
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  transform: scale(1.01);
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+.list-item-pic {
+  width: 70%;
+  max-height: 100%;
+}
+.list-item-pic img {
+  width: 100%;
+  height: 100%;
+}
+.list-item-description {
+  width: 30%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* background-color: #313030; */
+}
+.list-item-description h2 {
+  margin: 0 auto;
+  text-align: center;
+  color: #e84118;
+}
+.projects a:link,
+.projects a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+.description-title {
+  /* position: absolute; */
+  height: 20%;
+}
+.description-body {
+  height: 80%;
+  overflow: auto;
+  font-size: 65%;
+  padding: 10px;
+  /* position: absolute; */
+}
+.card-container {
+  /* background: #e6dfdf41; */
+  padding: 20px;
+  width: 75%;
+  height: 275px;
+  margin: 30px;
+}
+.projects-list .card-container:nth-child(even) .list-item {
+  float: right;
+}
+
+.projects-list .card-container:nth-child(odd) .list-item {
+  flex-direction: row-reverse;
+  float: left;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  transform: scale(1.01);
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.projects-list .card-container:nth-child(odd) .list-item:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  transform: scale(1);
+  transition: transform 0.4s, box-shadow 0.4s;
+}
