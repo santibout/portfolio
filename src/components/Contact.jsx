@@ -30,7 +30,9 @@ const Contact = () => {
   return (
     <section id="contact">
       <div className="contact">
-        <MapContainer />
+        <div className="map-container">
+          <MapContainer />
+        </div>
         <div className="contact-info">
           <div className="contact-row">
             <div className="contact-left-one">
