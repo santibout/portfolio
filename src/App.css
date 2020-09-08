@@ -6,7 +6,6 @@
 
 body {
   background-color: #000;
-  border: solid;
   color: #fff;
   font-family: "Lato", sans-serif;
   height: 100vh;
@@ -74,6 +73,18 @@ body {
   }
 }
 
+@media only screen and (max-width: 1080px) {
+  .resume-image-container {
+    left: 50px;
+    top: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50vw;
+    height: 100vh;
+    transform: scale(1.1);
+  }
+}
+
 @media only screen and (max-width: 1000px) {
   .card-container {
     width: 100%;
@@ -120,5 +131,124 @@ body {
     height: 100%;
     overflow: auto;
     margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .main-container {
+    flex-direction: column;
+  }
+  .main-left {
+    position: fixed;
+    top: 0;
+    width: 90%;
+    height: 8vh;
+    z-index: 1;
+  }
+  .left-one {
+    width: 30%;
+    flex-direction: row;
+  }
+  .fa-bars {
+    width: 10%;
+    height: 100%;
+    line-height: 1.5;
+    font-size: 150%;
+    position: absolute;
+    left: 0;
+  }
+  .menu-collasped {
+    display: inline-block;
+    position: relative;
+    top: -10%;
+    left: 23%;
+    width: 80%;
+  }
+  .menu-collasped ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+  .left-two {
+    height: 100%;
+    position: absolute;
+    line-height: 2;
+    /* border: solid green; */
+    width: 70%;
+    right: 0%;
+  }
+  .left-two ul {
+    flex-direction: row;
+    float: right;
+  }
+  .download {
+    padding-top: 0;
+  }
+  .main-middle {
+    /* border: solid red; */
+    position: relative;
+    height: 100vh;
+    top: 4.5%;
+    width: 30%;
+    font-size: 80%;
+    display: inline-block;
+  }
+  .main-container-img {
+    height: 96%;
+  }
+  .bla {
+    display: inline-block;
+    width: 50%;
+  }
+  .main-right {
+    position: absolute;
+    top: 4.5%;
+    left: 30%;
+    width: 66%;
+    overflow-x: hidden;
+    font-size: 90%;
+  }
+  .rescale {
+    width: 100%;
+    left: 50%;
+  }
+  .description-body {
+    overflow-x: hidden;
+  }
+  .work-item {
+    position: relative;
+    left: -15px;
+    width: 95%;
+  }
+  .about-me span {
+    margin-top: 20px;
+  }
+  .card-container {
+    width: 100%;
+    margin-left: -1px;
+  }
+  .list-item {
+    width: 95%;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .rescale {
+    width: 105%;
+    left: 53%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .projects {
+    font-size: 85%;
+  }
+  .resume-image-container {
+    left: 50px;
+    top: 130px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50vw;
+    height: 100vh;
+    transform: scale(1.1);
   }
 }

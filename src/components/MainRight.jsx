@@ -12,8 +12,9 @@ const MainRight = () => {
           <div className="about-me">
             <h2>About Me</h2>
             <h3>
-              {years} Years Experience &nbsp; / &nbsp; Full-Stack Web Developer
-              &nbsp; / &nbsp; Huntington Beach, CA
+              <span>{years} Years Experience &nbsp; /</span>
+              <span>&nbsp; Full-Stack Web Developer &nbsp; /</span>
+              <span>&nbsp; Huntington Beach, CA</span>
             </h3>
             <p>
               From my very first line of code I wrote and made "Hello World"
@@ -44,7 +45,8 @@ const MainRight = () => {
                 </p>
                 <h3>Back End</h3>
                 <p>
-                  T-SQL, SQL Server 2017, MongoDb, MongoDb Atlas Compass, Postgres
+                  T-SQL, SQL Server 2017, MongoDb, MongoDb Atlas Compass,
+                  Postgres
                 </p>
               </div>
             </div>

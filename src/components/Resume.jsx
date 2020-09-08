@@ -12,8 +12,9 @@ const Resume = () => {
           <a className="download" href={resume} download="santibout_resume.pdf">
             <p>download resume</p>
           </a>
-
-          <img className="resume-snippit" src={resumeSnippit} alt="my resume" />
+          <div className="resume-image-container">
+            
+          </div>
         </div>
       </div>
     </section>

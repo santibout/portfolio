@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <section id="projects">
       <div className="projects">
-        <h1>Here are some sample projects that I coded</h1>
+        <h1>Here are some of my projects</h1>
         <div className="projects-list">
           <div className="card-container">
             <a href="https://santibout.github.io/omnifood/" target="_blank">
