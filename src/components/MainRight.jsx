@@ -1,5 +1,6 @@
 import React from "react";
 import * as d3 from "d3";
+import WorkHistory from "./WorkHistory";
 
 const MainRight = () => {
   let years = new Date().getFullYear() - 2017;
@@ -68,8 +69,7 @@ const MainRight = () => {
             </div>
           </div>
         </section>
-        <hr />
-        <section className="two">
+        {/* <section className="two">
           <h2>Proficiencies</h2>
 
           <table class="main-table">
@@ -244,7 +244,9 @@ const MainRight = () => {
             </tr>
           </table>
         </section>
+       */}
       </div>
+      <WorkHistory />
     </section>
   );
 };

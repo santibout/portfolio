@@ -41,7 +41,7 @@ const Contact = () => {
             </div>
             <div className="contact-left-two">
               <i class="fas fa-envelope"></i>
-              <p>Email: &nbsp; samuel.santibout@yahoo.com</p>
+              <p>Email: &nbsp; samuel.santibout@gmail .com</p>
             </div>
           </div>
           <div className="contact-row">

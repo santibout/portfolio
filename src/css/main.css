@@ -106,6 +106,7 @@ body {
   position: relative;
   transform: scaleY(1.05);
   width: 100%;
+  z-index: -1;
 }
 /* .main-container-img:active {
   transform: scaleY(1);

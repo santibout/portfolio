@@ -6,9 +6,9 @@
 
 body {
   background-color: #000;
-  border: solid ;
+  border: solid;
   color: #fff;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   height: 100vh;
   padding: 30px;
 }
@@ -19,4 +19,106 @@ body {
 
 .App {
   height: 100%;
+}
+
+@media only screen and (max-width: 1830px) {
+  body {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 1430px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 1260px) {
+  .card-container {
+    width: 90%;
+  }
+  .description-body {
+    font-size: 100%;
+  }
+
+  .work-item {
+    height: 400px;
+    overflow: hidden;
+  }
+  .work-item-info {
+    height: 100%;
+    overflow: auto;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  body {
+    font-size: 18px;
+  }
+  .contact-row {
+    display: block;
+  }
+  .contact-left-one,
+  .contact-left-two {
+    width: 100%;
+  }
+  .work-description {
+    padding-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .card-container {
+    width: 100%;
+  }
+  .projects-list .card-container:nth-child(even) .list-item {
+    float: left;
+  }
+
+  .projects-list .card-container:nth-child(odd) .list-item {
+    flex-direction: row-reverse;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    transform: scale(1.01);
+    transition: transform 0.4s, box-shadow 0.4s;
+  }
+  .left-two li:hover .a-name {
+    /* display: block; */
+    visibility: hidden;
+  }
+  .description-body {
+    font-size: 100%;
+  }
+
+  .work-item {
+    height: 400px;
+    overflow: hidden;
+  }
+  .work-item div {
+    width: 50%;
+  }
+  .work-img {
+    position: relative;
+  }
+  .rescale {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+
+  .work-item-info {
+    height: 100%;
+    overflow: auto;
+    margin-right: 10px;
+  }
 }

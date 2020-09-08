@@ -31,7 +31,7 @@ const Main = () => {
                     <Switch location={location}>
                       <Route
                         exact
-                        path="/portfolio"
+                        path="/portfolio/"
                         component={() => <MainRight />}
                       />
                       <Route

@@ -32,6 +32,7 @@
   margin: 15px 0;
 }
 .work-description {
+  padding-right: 10px;
   color: #6a7a7c;
 }
 .work-img img {
@@ -39,8 +40,8 @@
   position: relative;
 }
 .rescale {
-    transform: scale(2);
-    position: absolute;
-    top: 25%;
-    right: 50%;
-  }
+  transform: scale(2);
+  position: relative;
+  top: 25%;
+  right: 50%;
+}
