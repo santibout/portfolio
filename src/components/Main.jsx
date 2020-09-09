@@ -21,7 +21,7 @@ const Main = () => {
             <div className="main-container">
               <Nav />
               <MainMiddle />
-              <TransitionGroup className='bla'>
+              <TransitionGroup id="right-contain">
                 <CSSTransition
                   key={location.key}
                   classNames="fade"

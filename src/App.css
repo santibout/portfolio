@@ -137,23 +137,25 @@ body {
 @media only screen and (max-width: 980px) {
   .main-container {
     flex-direction: column;
+    overflow: hidden;
   }
   .main-left {
     position: fixed;
     top: 0;
-    width: 90%;
-    height: 8vh;
+    width: 93%;
+    height: 8%;
     z-index: 1;
   }
   .left-one {
     width: 30%;
     flex-direction: row;
+    position: relative;
   }
   .fa-bars {
-    width: 10%;
+    width: 30%;
     height: 100%;
     line-height: 1.5;
-    font-size: 150%;
+    font-size: 120%;
     position: absolute;
     left: 0;
   }
@@ -174,7 +176,6 @@ body {
     height: 100%;
     position: absolute;
     line-height: 2;
-    /* border: solid green; */
     width: 70%;
     right: 0%;
   }
@@ -186,26 +187,32 @@ body {
     padding-top: 0;
   }
   .main-middle {
-    /* border: solid red; */
-    position: relative;
-    height: 100vh;
-    top: 4.5%;
+    position: fixed;
+    height: 770px;
     width: 30%;
     font-size: 80%;
     display: inline-block;
   }
   .main-container-img {
     height: 96%;
-  }
-  .bla {
     display: inline-block;
-    width: 50%;
+  }
+  #right-contain {
+    position: fixed;
+    display: inline-block !important;
+    width: 63.6%;
+    height: 88.1%;
+    top: 8%;
+    left: 33%;
+    /* overflow: visible; */
   }
   .main-right {
-    position: absolute;
-    top: 4.5%;
-    left: 30%;
-    width: 66%;
+    position: relative;
+    width: 70%;
+    overflow-x: hidden;
+    font-size: 90%;
+    height: 100%;
+    width: 100%;
     overflow-x: hidden;
     font-size: 90%;
   }
@@ -250,5 +257,110 @@ body {
     width: 50vw;
     height: 100vh;
     transform: scale(1.1);
+  }
+  .about-me span {
+    font-size: 90%;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .about-me span {
+    display: block;
+  }
+  .about-me span:first-child:before {
+    content: "\00a0\00a0";
+  }
+}
+@media only screen and (max-width: 700px) {
+  .main-middle {
+    display: block;
+    width: 93%;
+    height: 100%;
+  }
+  #right-contain {
+    width: 93%;
+    left: 4.4%;
+    height: 100%;
+  }
+  .resume {
+    margin-top: 50px;
+  }
+  .resume-image-container {
+    margin-top: 350px;
+    left: 23%;
+    transform: scale(1.8);
+  }
+}
+@media only screen and (max-width: 628px) {
+  .main-middle {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #right-contain {
+    left: 5.1%;
+  }
+  .left-one,
+  .left-two ul {
+    font-size: 80%;
+  }
+}
+@media only screen and (max-width: 560px) {
+  #right-contain {
+    left: 5.3%;
+  }
+  .work-img img {
+    margin-top: 20px;
+    margin-left: 5%;
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .main-left {
+    /* border: solid red; */
+    left: 6%;
+    width: 90%;
+  }
+  .fa-bars {
+    display: none;
+  }
+  .left-one {
+    margin-left: 0;
+    /* border: solid red; */
+  }
+  .menu-collasped {
+    display: block;
+    font-size: 90%;
+    opacity: 1;
+    left: 0;
+  }
+  .main-middle {
+    width: 90%;
+  }
+  #right-contain {
+    left: 6%;
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 464px) {
+  .main-left {
+    flex-direction: row-reverse;
+  }
+  .left-one ul {
+    flex-direction: column;
+    font-size: 90%;
+    margin-top: -8px;
+    position: relative;
+    left: 15px;
+  }
+  .left-two {
+    left: 0;
+  }
+  .left-two ul {
+    float: left;
+    font-size: 60%;
+  }
+  .main-middle {
+    width: 88%;
   }
 }
