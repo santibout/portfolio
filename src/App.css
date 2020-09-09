@@ -308,6 +308,8 @@ body {
   #right-contain {
     width: 93%;
     left: 4.3%;
+    /* margin-top: -12px; */
+    top: 20px;
     /* height: 100%; */
   }
   .resume {
