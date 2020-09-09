@@ -1,6 +1,7 @@
 import React from "react";
 import * as d3 from "d3";
 import WorkHistory from "./WorkHistory";
+import me from "../static/download.png";
 
 const MainRight = () => {
   let years = new Date().getFullYear() - 2017;
@@ -11,6 +12,7 @@ const MainRight = () => {
         <section className="right-main">
           <div className="about-me">
             <h2>About Me</h2>
+            <img className='me' src={me} alt="" />
             <h3>
               <span>{years} Years Experience &nbsp; /</span>
               <span>&nbsp; Full-Stack Web Developer &nbsp; /</span>

@@ -10,6 +10,11 @@ body {
   font-family: "Lato", sans-serif;
   height: 100vh;
   padding: 30px;
+  overflow: scroll;
+}
+
+.me {
+  display: none;
 }
 
 #root {
@@ -23,6 +28,9 @@ body {
 @media only screen and (max-width: 1830px) {
   body {
     font-size: 22px;
+  }
+  .about-me p {
+    line-height: 2;
   }
 }
 
@@ -269,17 +277,30 @@ body {
   .about-me span:first-child:before {
     content: "\00a0\00a0";
   }
+  /* #right-contain { */
+  height: inherit;
+  /* overflow: auto; */
+  /* } */
 }
 @media only screen and (max-width: 700px) {
+  .main-left {
+    border-bottom: 1px solid black;
+  }
+  .me {
+    display: block;
+  }
+  .about-me h2 {
+    display: none;
+  }
   .main-middle {
     display: block;
     width: 93%;
-    height: 100%;
+    height: 94%;
   }
   #right-contain {
     width: 93%;
     left: 4.4%;
-    height: 100%;
+    /* height: 100%; */
   }
   .resume {
     margin-top: 50px;
@@ -294,6 +315,12 @@ body {
   .main-middle {
     width: 90%;
   }
+  .services {
+    display: relative;
+  }
+  .services .row p {
+    width: 90%;
+  }
 }
 @media only screen and (max-width: 600px) {
   #right-contain {
@@ -302,6 +329,9 @@ body {
   .left-one,
   .left-two ul {
     font-size: 80%;
+  }
+  .services .row p {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 560px) {
@@ -313,9 +343,33 @@ body {
     margin-left: 5%;
     width: 90%;
   }
+  .services .row div {
+    justify-content: space-around;
+  }
+  .services .row p {
+    text-transform: lowercase;
+    line-height: 2;
+  }
 }
 
 @media only screen and (max-width: 500px) {
+  .main-left {
+    flex-direction: row-reverse;
+  }
+  .left-one ul {
+    flex-direction: column;
+    font-size: 90%;
+    margin-top: -8px;
+    position: relative;
+    left: 15px;
+  }
+  .left-two {
+    left: 0;
+  }
+  .left-two ul {
+    float: left;
+    font-size: 60%;
+  }
   .main-left {
     /* border: solid red; */
     left: 6%;
@@ -341,25 +395,12 @@ body {
     left: 6%;
     width: 90%;
   }
+  .services .row {
+    display: flex;
+    flex-direction: column;
+  }
 }
 @media only screen and (max-width: 464px) {
-  .main-left {
-    flex-direction: row-reverse;
-  }
-  .left-one ul {
-    flex-direction: column;
-    font-size: 90%;
-    margin-top: -8px;
-    position: relative;
-    left: 15px;
-  }
-  .left-two {
-    left: 0;
-  }
-  .left-two ul {
-    float: left;
-    font-size: 60%;
-  }
   .main-middle {
     width: 88%;
   }
