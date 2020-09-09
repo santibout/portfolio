@@ -221,6 +221,13 @@ h2 {
   color: #e84118;
   font-size: 140%;
 }
+.services .row {
+  margin-top: 15px;
+}
+.skills-text {
+  height: 10%;
+  border: solid transparent;
+}
 .main-right {
   display: flex;
 }
@@ -235,7 +242,8 @@ h2 {
   box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
 }
 .main-middle i {
-  margin: 10px;
+  margin: 0 20px;
+  margin-top: 10px;
   font-size: 130%;
 }
 .main-middle a:active,

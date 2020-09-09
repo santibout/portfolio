@@ -46,7 +46,7 @@
 .resume-image-container {
   position: absolute;
   left: 50px;
-  top: 100px;
+  top: 150px;
   background-image: url("../static/resume-snippit.png");
   background-size: cover;
   background-repeat: no-repeat;

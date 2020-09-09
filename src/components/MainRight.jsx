@@ -12,7 +12,7 @@ const MainRight = () => {
         <section className="right-main">
           <div className="about-me">
             <h2>About Me</h2>
-            <img className='me' src={me} alt="" />
+            <img className="me" src={me} alt="" />
             <h3>
               <span>{years} Years Experience &nbsp; /</span>
               <span>&nbsp; Full-Stack Web Developer &nbsp; /</span>
@@ -33,42 +33,51 @@ const MainRight = () => {
           </div>
           <div className="services">
             <h2>My Skills</h2>
+            <br />
             <div className="row">
               <div className="two-d">
-                <p>
+                <div className="skills-icon-container">
                   <i class="fas fa-tv"></i>
-                </p>
+                </div>
                 <h3>Front End</h3>
-                <p>JavaScript, React, Angular, jQuery, CSS 3, HTML 5, AJAX</p>
+                <div className="skills-text">
+                  <p>JavaScript, React, Angular, jQuery, CSS 3, HTML 5, AJAX</p>
+                </div>
               </div>
               <div className="two-d">
-                <p>
+                <div className="skills-icon-container">
                   <i class="fas fa-database"></i>
-                </p>
+                </div>
                 <h3>Back End</h3>
-                <p>
-                  T-SQL, SQL Server 2017, MongoDb, MongoDb Atlas Compass,
-                  Postgres
-                </p>
+                <div className="skills-text">
+                  <p>
+                    T-SQL, SQL Server 2017, MongoDb, MongoDb Atlas Compass,
+                    Postgres
+                  </p>
+                </div>
               </div>
             </div>
             <div className="row">
               <div className="two-d">
-                <p>
+                <div className="skills-icon-container">
                   <i class="fas fa-server"></i>
-                </p>
+                </div>
                 <h3>Middle Tier</h3>
-                <p>NodeJS, JavaScript, ASP.Net, C#, MVC, Web Api</p>
+                <div className="skills-text">
+                  <p>NodeJS, JavaScript, ASP.Net, C#, MVC, Web Api</p>
+                </div>
               </div>
               <div className="two-d">
-                <p>
+                <div className="skills-icon-container">
                   <i class="fas fa-boxes"></i>
-                </p>
+                </div>
                 <h3>Other Technical</h3>
-                <p>
-                  TFS, Agile/Scrum Methodologies, Visual Studio Code, API
-                  Integration, Git
-                </p>
+                <div className="skills-text">
+                  <p>
+                    TFS, Agile/Scrum Methodologies, Visual Studio Code, API
+                    Integration, Git
+                  </p>
+                </div>
               </div>
             </div>
           </div>

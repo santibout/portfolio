@@ -196,7 +196,7 @@ body {
   }
   .main-middle {
     position: fixed;
-    height: 770px;
+    height: 94vh;
     width: 30%;
     font-size: 80%;
     display: inline-block;
@@ -209,7 +209,8 @@ body {
     position: fixed;
     display: inline-block !important;
     width: 63.6%;
-    height: 88.1%;
+    /* height: 88.1%; */
+    height: 88.5vh;
     top: 8%;
     left: 33%;
     /* overflow: visible; */
@@ -307,6 +308,13 @@ body {
     transform: scale(1.8);
   }
 }
+@media only screen and (max-width: 628px) {
+  .main-left {
+    min-height: 8%;
+    /* border: solid green; */
+  }
+}
+
 @media only screen and (max-width: 628px) {
   .main-middle {
     width: 90%;
@@ -408,5 +416,48 @@ body {
 @media only screen and (max-width: 402px) {
   .rescale {
     left: 45%;
+  }
+}
+@media only screen and (max-width: 365px) {
+  .left-one {
+    font-size: 60%;
+    padding-left: 20px;
+  }
+  .resume p {
+    margin-top: 20px;
+  }
+  .resume-image-container {
+    top: 80px;
+  }
+}
+@media only screen and (max-height: 415px) and (min-height: 400px){
+  .main-left {
+    height: 15%;
+    margin-bottom: 5px;
+  }
+  .resume {
+    margin-top: 40px;
+  }
+  .resume-image-container {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-height: 375px) {
+  .main-left {
+    height: 20%;
+  }
+  .projects {
+    margin-top: 50px;
+  }
+  .resume {
+    margin-top: 80px;
+  }
+  .resume-image-container {
+    top: 0;
+    left: 30%;
+  }
+  #right-contain {
+    height: 100%
   }
 }
