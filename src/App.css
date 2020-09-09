@@ -406,7 +406,7 @@ body {
   .menu-collasped {
     display: block;
     font-size: 90%;
-    opacity: 1;
+    /* opacity: 1; */
     left: 0;
   }
   .main-middle {
@@ -422,35 +422,14 @@ body {
   }
 }
 @media only screen and (max-width: 464px) {
+  #right-contain {
+    padding-bottom: 10px;
+  }
+  #work-history {
+    padding-bottom: 40px;
+  }
   .main-middle {
     width: 88%;
-  }
-}
-@media only screen and (max-width: 402px) {
-  .rescale {
-    left: 45%;
-  }
-}
-@media only screen and (max-width: 375px) {
-  .menu-collasped {
-    padding-left: 25px;
-    padding-top: -5px;
-  }
-  /* #right-contain {
-    padding-top: 0;
-    padding-bottom: 70px;
-  } */
-}
-@media only screen and (max-width: 365px) {
-  .left-one {
-    font-size: 60%;
-    padding-left: 20px;
-  }
-  .resume p {
-    margin-top: 20px;
-  }
-  .resume-image-container {
-    top: 80px;
   }
   .work-item {
     flex-direction: column-reverse;
@@ -481,6 +460,62 @@ body {
     width: 89%;
     margin-left: 8px;
   }
+}
+@media only screen and (max-width: 402px) {
+  .rescale {
+    left: 45%;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .menu-collasped {
+    padding-left: 25px;
+    padding-top: -5px;
+  }
+  /* #right-contain {
+    padding-top: 0;
+    padding-bottom: 70px;
+  } */
+}
+@media only screen and (max-width: 365px) {
+  .left-one {
+    font-size: 60%;
+    padding-left: 20px;
+  }
+  .resume p {
+    margin-top: 20px;
+  }
+  .resume-image-container {
+    top: 80px;
+  }
+  /* .work-item {
+    flex-direction: column-reverse;
+    width: 84%;
+    height: 500px;
+  }
+  .work-item div {
+    width: 100%;
+  }
+  .work-img {
+    margin-bottom: 20px;
+  }
+  .work-date {
+    padding-left: 0;
+  }
+  .work-date span {
+    display: inline-block;
+  }
+  .work-item-info p {
+    font-size: 100%;
+    line-height: 1.7;
+    width: 100%;
+  }
+  .list-item {
+    flex-direction: column !important;
+    height: fit-content;
+    margin-top: 30px;
+    width: 89%;
+    margin-left: 8px;
+  } */
   .list-item h2 {
     margin-top: 20px;
   }
@@ -516,7 +551,16 @@ body {
     width: 50%;
     left: 25%;
   }
-} 
+}
+@media only screen and (max-width: 768px) and (min-height: 0px) {
+  .main-left {
+    height: 50px;
+  }
+  #right-contain {
+    height: 100%;
+    padding-bottom: 30px;
+  }
+}
 
 /* @media only screen and (max-height: 375px) {
   .main-left {
