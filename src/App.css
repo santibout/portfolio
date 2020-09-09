@@ -510,6 +510,12 @@ body {
   .left-one {
     height: 100%;
   }
+  .main-middle {
+    height: 90%;
+    /* width: 92%; */
+    width: 50%;
+    left: 25%;
+  }
 } 
 
 /* @media only screen and (max-height: 375px) {
