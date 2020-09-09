@@ -11,7 +11,9 @@ const WorkHistory = () => {
         <div className="work-main">
           <div className="work-item">
             <div className="work-item-info">
-              <p className="work-date">Aug 2019 - Jan 2020</p>
+              <p className="work-date">
+                <span>Aug 2019</span> - <span>Jan 2020</span>
+              </p>
               <h3 className="work-title">Information Developer</h3>
               <p className="work-place">Perspecta / City Of Anaheim</p>
               <p className="work-description">
@@ -34,7 +36,9 @@ const WorkHistory = () => {
         </div>
         <div className="work-item">
           <div className="work-item-info">
-            <p className="work-date">Feb 2019 - Jul 2019</p>
+            <p className="work-date">
+              <span>Feb 2019 </span> - <span>Jul 2019</span>
+            </p>
             <h3 className="work-title">Assistant Instructor</h3>
             <p className="work-place">Redwood Code Academy</p>
             <p className="work-description">
@@ -53,7 +57,9 @@ const WorkHistory = () => {
         </div>
         <div className="work-item">
           <div className="work-item-info">
-            <p className="work-date">Nov 2017 - Aug 2019</p>
+            <p className="work-date">
+              <span>Nov 2017</span> - <span>Aug 2019</span>
+            </p>
             <h3 className="work-title">Full-Stack Engineer</h3>
             <p className="work-place">Everyonic</p>
             <p className="work-description">

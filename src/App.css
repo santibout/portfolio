@@ -277,10 +277,6 @@ body {
   .about-me span:first-child:before {
     content: "\00a0\00a0";
   }
-  /* #right-contain { */
-  height: inherit;
-  /* overflow: auto; */
-  /* } */
 }
 @media only screen and (max-width: 700px) {
   .main-left {
@@ -295,11 +291,11 @@ body {
   .main-middle {
     display: block;
     width: 93%;
-    height: 94%;
+    height: 93%;
   }
   #right-contain {
     width: 93%;
-    left: 4.4%;
+    left: 4.3%;
     /* height: 100%; */
   }
   .resume {
@@ -323,6 +319,9 @@ body {
   }
 }
 @media only screen and (max-width: 600px) {
+  .work-item span {
+    display: block;
+  }
   #right-contain {
     left: 5.1%;
   }
@@ -349,6 +348,7 @@ body {
   .services .row p {
     text-transform: lowercase;
     line-height: 2;
+    padding: 10px;
   }
 }
 
@@ -403,5 +403,10 @@ body {
 @media only screen and (max-width: 464px) {
   .main-middle {
     width: 88%;
+  }
+}
+@media only screen and (max-width: 402px) {
+  .rescale {
+    left: 45%;
   }
 }
