@@ -12,23 +12,43 @@ const MainRight = () => {
         <section className="right-main">
           <div className="about-me">
             <h2>About Me</h2>
-            <img className="me" src={me} alt="" />
-            <h3>
-              <span>{years} Years Experience &nbsp; /</span>
-              <span>&nbsp; Full-Stack Web Developer &nbsp; /</span>
-              <span>&nbsp; Huntington Beach, CA</span>
-            </h3>
-            <p>
-              From my very first line of code I wrote and made "Hello World"
-              appear on my computer screen I knew I was hooked. It was at that
-              moment I knew becoming a Software Engineer is what I wanted to
-              pursue as a career. I've always been driven by this goal
-              constantly learning and pushing myself to achieve my dream. I knew
-              that entering the exciting field of Software not only
-              future-proofs my career but allowed my potential to have no
-              limits. I pursued a career as a Software Developer knowing I have
-              the ability to impact the future by creating it.
-            </p>
+            <div className="about-me-image">
+              <div className="about-info">
+                <div className="about-info-content">
+                  <h1>Samuel J. Santibout</h1>
+                  <h3>Developer</h3>
+                  <div className="about-main-middle-row">
+                    <a
+                      href="https://www.linkedin.com/in/santibout/"
+                      target="_blank"
+                    >
+                      <i className="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.github.com/santibout/" target="_blank">
+                      <i className="fab fa-github-square"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="about-me-description">
+              <h3>
+                <span>{years} Years Experience &nbsp; /</span>
+                <span>&nbsp; Full-Stack Web Developer &nbsp; /</span>
+                <span>&nbsp; Huntington Beach, CA</span>
+              </h3>
+              <p>
+                From my very first line of code I wrote and made "Hello World"
+                appear on my computer screen I knew I was hooked. It was at that
+                moment I knew becoming a Software Engineer is what I wanted to
+                pursue as a career. I've always been driven by this goal
+                constantly learning and pushing myself to achieve my dream. I
+                knew that entering the exciting field of Software not only
+                future-proofs my career but allowed my potential to have no
+                limits. I pursued a career as a Software Developer knowing I
+                have the ability to impact the future by creating it.
+              </p>
+            </div>
             <hr />
           </div>
           <div className="services">
@@ -37,7 +57,7 @@ const MainRight = () => {
             <div className="row">
               <div className="two-d">
                 <div className="skills-icon-container">
-                  <i class="fas fa-tv"></i>
+                  <i className="fas fa-tv"></i>
                 </div>
                 <h3>Front End</h3>
                 <div className="skills-text">
@@ -46,7 +66,7 @@ const MainRight = () => {
               </div>
               <div className="two-d">
                 <div className="skills-icon-container">
-                  <i class="fas fa-database"></i>
+                  <i className="fas fa-database"></i>
                 </div>
                 <h3>Back End</h3>
                 <div className="skills-text">
@@ -60,7 +80,7 @@ const MainRight = () => {
             <div className="row">
               <div className="two-d">
                 <div className="skills-icon-container">
-                  <i class="fas fa-server"></i>
+                  <i className="fas fa-server"></i>
                 </div>
                 <h3>Middle Tier</h3>
                 <div className="skills-text">
@@ -69,7 +89,7 @@ const MainRight = () => {
               </div>
               <div className="two-d">
                 <div className="skills-icon-container">
-                  <i class="fas fa-boxes"></i>
+                  <i className="fas fa-boxes"></i>
                 </div>
                 <h3>Other Technical</h3>
                 <div className="skills-text">
@@ -82,182 +102,6 @@ const MainRight = () => {
             </div>
           </div>
         </section>
-        {/* <section className="two">
-          <h2>Proficiencies</h2>
-
-          <table class="main-table">
-            <tr>
-              <th style={{ display: "flex" }}>
-                <p>JavaScript</p>
-                <div className="bar-container">
-                  <div
-                    style={{
-                      background: "steelblue",
-                      padding: "3px",
-                      width: "90%",
-                    }}
-                  >
-                    <p>90%</p>
-                  </div>
-                </div>
-              </th>
-            </tr>
-
-            <tr>
-              <th style={{ display: "flex" }}>
-                <p>React</p>
-                <div className="bar-container">
-                  <div
-                    style={{
-                      background: "steelblue",
-                      padding: "3px",
-                      width: "85%",
-                    }}
-                  >
-                    <p>85%</p>
-                  </div>
-                </div>
-              </th>
-            </tr>
-
-            <tr>
-              <th style={{ display: "flex" }}>
-                <p>Angular</p>
-                <div className="bar-container">
-                  <div
-                    style={{
-                      background: "steelblue",
-                      padding: "3px",
-                      width: "70%",
-                    }}
-                  >
-                    <p>70%</p>
-                  </div>
-                </div>
-              </th>
-            </tr>
-
-            <tr>
-              <th style={{ display: "flex" }}>
-                <p>HTML</p>
-                <div className="bar-container">
-                  <div
-                    style={{
-                      background: "steelblue",
-                      padding: "3px",
-                      width: "100%",
-                    }}
-                  >
-                    <p>100%</p>
-                  </div>
-                </div>
-              </th>
-            </tr>
-
-            <tr>
-              <th style={{ display: "flex" }}>
-                <p>CSS</p>
-                <div className="bar-container">
-                  <div
-                    style={{
-                      background: "steelblue",
-                      padding: "3px",
-                      width: "70%",
-                    }}
-                  >
-                    <p>70%</p>
-                  </div>
-                </div>
-              </th>
-            </tr>
-
-            <tr>
-              <th style={{ display: "flex" }}>
-                <p>C#</p>
-                <div className="bar-container">
-                  <div
-                    style={{
-                      background: "steelblue",
-                      padding: "3px",
-                      width: "85%",
-                    }}
-                  >
-                    <p>85%</p>
-                  </div>
-                </div>
-              </th>
-            </tr>
-
-            <tr>
-              <th style={{ display: "flex" }}>
-                <p>SQL</p>
-                <div className="bar-container">
-                  <div
-                    style={{
-                      background: "steelblue",
-                      padding: "3px",
-                      width: "90%",
-                    }}
-                  >
-                    <p>90%</p>
-                  </div>
-                </div>
-              </th>
-            </tr>
-
-            <tr>
-              <th style={{ display: "flex" }}>
-                <p>MongoDB</p>
-                <div className="bar-container">
-                  <div
-                    style={{
-                      background: "steelblue",
-                      padding: "3px",
-                      width: "80%",
-                    }}
-                  >
-                    <p>80%</p>
-                  </div>
-                </div>
-              </th>
-            </tr>
-
-            <tr>
-              <th style={{ display: "flex" }}>
-                <p>NodeJS</p>
-                <div className="bar-container">
-                  <div
-                    style={{
-                      background: "steelblue",
-                      padding: "3px",
-                      width: "70%",
-                    }}
-                  >
-                    <p>75%</p>
-                  </div>
-                </div>
-              </th>
-            </tr>
-
-            <tr>
-              <th style={{ display: "flex" }}>
-                <p>ASP .NET</p>
-                <div className="bar-container">
-                  <div
-                    style={{
-                      background: "steelblue",
-                      padding: "3px",
-                      width: "70%",
-                    }}
-                  >
-                    <p>70%</p>
-                  </div>
-                </div>
-              </th>
-            </tr>
-          </table>
-        </section>
-       */}
       </div>
       <WorkHistory />
     </section>

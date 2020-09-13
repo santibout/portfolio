@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/marker.css';
 
-const Marker = (props: any) => {
+const Marker = (props) => {
     const { color, name, id } = props;
     return (
       <div className="marker"

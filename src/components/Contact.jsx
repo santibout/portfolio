@@ -36,21 +36,21 @@ const Contact = () => {
         <div className="contact-info">
           <div className="contact-row">
             <div className="contact-left-one">
-              <i class="fas fa-map-marker"></i>{" "}
+              <i className="fas fa-map-marker"></i>{" "}
               <p>Location: &nbsp; Huntington Beach, CA</p>
             </div>
             <div className="contact-left-two">
-              <i class="fas fa-envelope"></i>
+              <i className="fas fa-envelope"></i>
               <p>Email: &nbsp; samuel.santibout@gmail .com</p>
             </div>
           </div>
           <div className="contact-row">
             <div className="contact-left-one">
-              <i class="fas fa-mobile-alt"></i>
+              <i className="fas fa-mobile-alt"></i>
               <p> &nbsp; Cell: &nbsp; (619) 890-5996</p>
             </div>
             <div className="contact-left-two">
-              <i class="fab fa-linkedin"></i>
+              <i className="fab fa-linkedin"></i>
               <p>LinkedIn: &nbsp; linkedin.com/in/santibout</p>
             </div>
           </div>

@@ -22,11 +22,7 @@ const Main = () => {
               <Nav />
               <MainMiddle />
               <TransitionGroup id="right-contain">
-                <CSSTransition
-                  key={location.key}
-                  classNames="fade"
-                  // timeout={{ enter: 500, exit: 500 }}
-                >
+                <CSSTransition key={location.key} classNames="fade" timeout={0}>
                   <div className="main-right">
                     <Switch location={location}>
                       <Route

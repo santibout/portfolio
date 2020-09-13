@@ -25,7 +25,7 @@ const Nav = (props) => {
   return (
     <div className="main-left">
       <div className="left-one">
-        <i class="fas fa-bars" onClick={menuClick}></i>
+        <i className="fas fa-bars" onClick={menuClick}></i>
         <div className="menu-collasped">
           <ul>
             <li>
@@ -49,10 +49,13 @@ const Nav = (props) => {
       </div>
       <div className="left-two">
         <ul>
-          <Link to="/portfolio/" className={`${path === "/portfolio/" ? "active-li" : ""}`}>
+          <Link
+            to="/portfolio/"
+            className={`${path === "/portfolio/" ? "active-li" : ""}`}
+          >
             <li>
               {/* <i class="fas fa-user-tie"></i> */}
-              <i class="far fa-user-circle"></i>
+              <i className="far fa-user-circle"></i>
               <p className="a-name">about</p>
             </li>
           </Link>
@@ -70,7 +73,7 @@ const Nav = (props) => {
             className={`${path === "/portfolio/resume" ? "active-li" : ""}`}
           >
             <li>
-              <i class="far fa-file-alt"></i>
+              <i className="far fa-file-alt"></i>
               <p className="a-name">resume</p>
             </li>
           </Link>
@@ -82,16 +85,16 @@ const Nav = (props) => {
           </Link> */}
           <Link
             to="/portfolio/projects"
-            class={`${path === "/portfolio/projects" ? "active-li" : ""}`}
+            className={`${path === "/portfolio/projects" ? "active-li" : ""}`}
           >
             <li>
-              <i class="far fa-file-code"></i>
+              <i className="far fa-file-code"></i>
               <p className="a-name">projects</p>
             </li>
           </Link>
           <a href={resume} download="santibout_resume.pdf">
             <li className="download">
-              <i class="fas fa-cloud-download-alt"></i>
+              <i className="fas fa-cloud-download-alt"></i>
               <p className="a-name">download resume</p>
             </li>
           </a>
