@@ -105,6 +105,9 @@ body {
   #right-contain {
     overflow-x: hidden;
   }
+  .work-item span {
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 1080px) {
@@ -325,10 +328,16 @@ body {
   .main-left {
     width: 92%;
   }
+
+  .info-content {
+    transform: translateY(-10%);
+  }
   #right-contain {
-    /* top: 20px; */
+    top: 40px;
     /* right: 0; */
-    /* width: 68%; */
+    width: 67.5%;
+    height: 95.8% !important;
+    padding-bottom: 5px !important;
   }
 }
 @media only screen and (max-width: 731px) {
@@ -620,7 +629,7 @@ body {
     width: 89%;
     margin-left: 8px;
   }
-  */ .list-item h2 {
+  .list-item h2 {
     margin-top: 20px;
   }
   .list-item-pic {
@@ -630,8 +639,13 @@ body {
     width: 100%;
     line-height: 1.5;
   }
+  .about-info {
+    font-size: 150%;
+  }
+  .about-info-content {
+    transform: translateY(15%);
+  }
 }
-
 
 @media only screen and (max-width: 402px) {
   .rescale {
@@ -643,10 +657,9 @@ body {
     padding-left: 25px;
     padding-top: -5px;
   }
-  /* #right-contain {
-    padding-top: 0;
-    padding-bottom: 70px;
-  } */
+  .about-info {
+    font-size: 130%;
+  }
 }
 @media only screen and (max-width: 365px) {
   .left-one {
@@ -656,8 +669,8 @@ body {
   .resume p {
     margin-top: 20px;
   }
-  .resume-image-container {
-    /* top: 80px; */
+  .about-info-content {
+    font-size: 80%;
   }
 
   #right-contain {
@@ -686,21 +699,113 @@ body {
     left: 25%;
   }
 }
-@media only screen and (max-width: 768px) and (min-height: 0px) {
+@media only screen and (max-width: 768px) and (max-height: 500px) {
   .main-left {
     height: 50px;
+  }
+  .info {
+    bottom: 10%;
+    height: 30%;
+    font-size: 60%;
   }
   #right-contain {
     height: 100%;
     padding-bottom: 30px;
   }
+  .work-img {
+    transform: translate(-5%, -15%) scale(0.8);
+  }
+  .rescale {
+    transform: scale(1.2) translate(-35%, 10%);
+  }
 }
 
-@media only screen and (min-device-height: 360px) and (min-device-width: 760px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 4) {
-  html {
-    display: none;
+@media only screen and (max-width: 720px) and (max-height: 540px) {
+  .info {
+    height: 40%;
   }
-  body {
-    display: none;
+}
+@media only screen and (max-width: 731px) and (max-height: 411px) {
+  .info {
+    height: 35% !important;
+  }
+  .info-content {
+    transform: translateY(10%);
+  }
+}
+
+/* @media only screen and (max-width: 812px) and (max-height: 375px) { */
+
+@media only screen and (max-width: 823px) and (max-height: 411px) {
+  #right-contain {
+    top: 10vh;
+    right: 0;
+    width: 67.8%;
+    height: 100%;
+  }
+  .info {
+    height: 40%;
+    font-size: 55%;
+  }
+}
+@media only screen and (max-width: 290px) and (max-height: 653px) {
+  /* .about-me-image { */
+  /* transform: translateX(15%); */
+  /* } */
+  .about-me {
+    transform: translateX(10%);
+  }
+  .about-info {
+    font-size: 135%;
+  }
+  .work-item {
+    width: 100%;
+    transform: translateX(7%);
+  }
+  .services h2,
+  #work-history > h2 {
+    text-align: center;
+    padding: 0;
+  }
+  .services i {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (width: 768px) and (height: 1024px) {
+  .info-content {
+    transform: translateY(15%);
+  }
+}
+/* @media only screen and (max-width: 653px) and (max-height: 361px) { */
+
+@media only screen and (width: 568px) and (height: 320px) {
+  .about-info-content {
+    left: 65% !important;
+  }
+}
+@media only screen and (max-width: 667px) and (max-height: 375px) {
+  .about-me {
+    background-size: 100vh;
+  }
+  .about-me-image {
+    height: 80vh;
+    background-size: contain;
+    position: relative;
+    left: -20%;
+    bottom: 10%;
+  }
+  .about-info {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .about-info-content {
+    position: absolute;
+    left: 60%;
+    font-size: 75%;
+    top: -170%;
+  }
+  #right-contain {
+    left: 0;
+    width: 100%;
   }
 }
