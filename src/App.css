@@ -827,7 +827,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 450px) and (max-height: 869px) {
+@media only screen and (max-width: 420px) and (max-height: 869px) {
   .contact
   {
     font-size: 90%;
