@@ -11,7 +11,27 @@ body {
   height: 100vh;
   padding: 30px;
 }
-
+.two-d {
+  /* border: solid green; */
+  height: 100px;
+}
+.skills-icon-container {
+  margin-bottom: 10px;
+  /* border: 1px solid red; */
+  /* height: 50px; */
+  /* position: relative; */
+}
+.two-d .skills-text {
+  /* border: 1px solid red; */
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+  /* width: 100%; */
+  /* word-break: keep-all; */
+}
+hr {
+  width: 100% !important;
+}
 .about-me-image {
   display: none;
 }
@@ -511,7 +531,7 @@ body {
     width: 100%;
     left: 0;
     overflow: auto;
-    padding-bottom: 57px;
+    margin-bottom: 35px;
   }
   #right-contain {
     /* left: 5.3%; */
@@ -543,6 +563,7 @@ body {
     height: 30%;
   }
   #right-contain {
+    overflow: auto;
     padding-bottom: 30px;
   }
 }
@@ -598,6 +619,9 @@ body {
   .services .row {
     display: flex;
     flex-direction: column;
+  }
+  .two-d {
+    margin-bottom: 100px;
   }
 }
 @media only screen and (max-width: 464px) {
@@ -828,8 +852,7 @@ body {
 }
 
 @media only screen and (max-width: 420px) and (max-height: 869px) {
-  .contact
-  {
+  .contact {
     font-size: 90%;
   }
 }
