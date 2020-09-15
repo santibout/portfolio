@@ -843,3 +843,9 @@ body {
     transform: translateX(-8%);
   }
 }
+
+@media only screen and (width: 412px) and (height: 869px) {
+  .contact {
+    font-size: 93%;
+  }
+}
