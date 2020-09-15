@@ -11,6 +11,7 @@ import Projects from "./Projects";
 import Login from "./Login";
 import Register from "./register";
 import Resume from "./Resume";
+import WorkInProgress from './WorkInProgress';
 
 const Main = () => {
   return (
@@ -40,7 +41,7 @@ const Main = () => {
                       />
                       <Route
                         path="/portfolio/login"
-                        component={() => <Login />}
+                        component={() => <WorkInProgress />}
                       />
                       <Route
                         path="/portfolio/resume"
@@ -48,7 +49,7 @@ const Main = () => {
                       />
                       <Route
                         path="/portfolio/register"
-                        component={() => <Register />}
+                        component={() => <WorkInProgress />}
                       />
                       <Route render={() => <div>Not Found</div>} />
                     </Switch>

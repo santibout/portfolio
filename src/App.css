@@ -190,6 +190,7 @@ body {
   .main-container {
     flex-direction: column;
     overflow: hidden;
+    width: 100%;
   }
   .main-left {
     position: fixed;
@@ -255,6 +256,7 @@ body {
     top: 5.2%;
     right: 0;
     padding-bottom: 40px;
+    width: 68%;
   }
   body {
     padding-bottom: 0;
@@ -288,8 +290,6 @@ body {
   .list-item {
     width: 95%;
   }
-}
-@media only screen and (max-width: 980px) {
   .main-left {
     width: 93.8%;
     border-bottom: 1px solid black;
@@ -324,6 +324,23 @@ body {
     font-size: 90%;
   }
 }
+
+/* @media only screen and (max-width: 769px) and (max-height: 411px) {
+  .info {
+    height: 30%;
+    font-size: 60%;
+    bottom: 0%;
+  }
+  .info-content {
+    bottom: 10%;
+  }
+  #right-contain {
+    width: 67.5%;
+    height: 100%;
+    padding-bottom: 20px;
+  }
+} */
+
 @media only screen and (max-width: 768px) {
   .main-left {
     width: 92%;
@@ -689,19 +706,19 @@ body {
     margin-top: -70px;
   }
 }
-
-@media only screen and (max-width: 696px) and (min-height: 0px) {
-  .main-left {
-    height: 60px;
-  }
-  .left-one {
+@media only screen and (max-width: 823px) and (max-height: 411px) {
+  #right-contain {
+    top: 10vh;
+    right: 0;
+    width: 67.8%;
     height: 100%;
   }
-  .main-middle {
-    height: 90%;
-    /* width: 92%; */
-    width: 50%;
-    left: 25%;
+  .info {
+    height: 40%;
+    font-size: 55%;
+  }
+  .resume p {
+    transform: translateX(-20%);
   }
 }
 @media only screen and (max-width: 768px) and (max-height: 500px) {
@@ -724,12 +741,15 @@ body {
     transform: scale(1.2) translate(-35%, 10%);
   }
 }
-
-@media only screen and (max-width: 720px) and (max-height: 540px) {
-  .info {
-    height: 40%;
+@media only screen and (width: 768px) and (height: 1024px) {
+  .info-content {
+    transform: translateY(15%);
+  }
+  .resume p {
+    transform: translateX(-5%);
   }
 }
+
 @media only screen and (max-width: 736px) and (max-height: 414px) {
   .info {
     height: 35% !important;
@@ -748,68 +768,26 @@ body {
     transform: translateX(-10%);
   }
 }
+@media only screen and (max-width: 720px) and (max-height: 540px) {
+  .info {
+    height: 40%;
+  }
+}
 
 /* @media only screen and (max-width: 812px) and (max-height: 375px) { */
 
-@media only screen and (max-width: 823px) and (max-height: 411px) {
-  #right-contain {
-    top: 10vh;
-    right: 0;
-    width: 67.8%;
+@media only screen and (max-width: 696px) and (min-height: 0px) {
+  .main-left {
+    height: 60px;
+  }
+  .left-one {
     height: 100%;
   }
-  .info {
-    height: 40%;
-    font-size: 55%;
-  }
-  .resume p {
-    transform: translateX(-20%);
-  }
-}
-@media only screen and (max-width: 290px) and (max-height: 653px) {
-  /* .about-me-image { */
-  /* transform: translateX(15%); */
-  /* } */
-  .about-me {
-    transform: translateX(10%);
-  }
-  .about-info {
-    font-size: 135%;
-  }
-  .work-item {
-    width: 100%;
-    transform: translateX(7%);
-  }
-  .services h2,
-  #work-history > h2 {
-    text-align: center;
-    padding: 0;
-  }
-  .services i {
-    margin-bottom: 10px;
-  }
-  .resume p {
-    transform: translateX(-10%);
-    font-size: 90% !important;
-  }
-  .resume-image-container {
-    margin-top: -50px;
-  }
-}
-
-@media only screen and (width: 768px) and (height: 1024px) {
-  .info-content {
-    transform: translateY(15%);
-  }
-  .resume p {
-    transform: translateX(-5%);
-  }
-}
-/* @media only screen and (max-width: 653px) and (max-height: 361px) { */
-
-@media only screen and (width: 568px) and (height: 320px) {
-  .about-info-content {
-    left: 65% !important;
+  .main-middle {
+    height: 90%;
+    /* width: 92%; */
+    width: 50%;
+    left: 25%;
   }
 }
 @media only screen and (max-width: 667px) and (max-height: 375px) {
@@ -843,9 +821,47 @@ body {
     transform: translateX(-8%);
   }
 }
-
-@media only screen and (width: 412px) and (height: 869px) {
-  .contact {
-    font-size: 93%;
+@media only screen and (width: 568px) and (height: 320px) {
+  .about-info-content {
+    left: 65% !important;
   }
 }
+
+@media only screen and (max-width: 412px) and (height: 869px) {
+  .contact {
+    font-size: 90%;
+  }
+}
+
+@media only screen and (max-width: 290px) and (max-height: 653px) {
+  /* .about-me-image { */
+  /* transform: translateX(15%); */
+  /* } */
+  .about-me {
+    transform: translateX(10%);
+  }
+  .about-info {
+    font-size: 135%;
+  }
+  .work-item {
+    width: 100%;
+    transform: translateX(7%);
+  }
+  .services h2,
+  #work-history > h2 {
+    text-align: center;
+    padding: 0;
+  }
+  .services i {
+    margin-bottom: 10px;
+  }
+  .resume p {
+    transform: translateX(-10%);
+    font-size: 90% !important;
+  }
+  .resume-image-container {
+    margin-top: -50px;
+  }
+}
+
+/* @media only screen and (max-width: 653px) and (max-height: 361px) { */

@@ -30,7 +30,7 @@ const Nav = (props) => {
           <ul>
             <li>
               <Link
-                to="/login"
+                to="/portfolio/login"
                 className={`${path === "/login" ? "active-li" : ""}`}
               >
                 Log In
@@ -38,7 +38,7 @@ const Nav = (props) => {
             </li>
             <li>
               <Link
-                to="/register"
+                to="/portfolio/register"
                 className={`${path === "/register" ? "active-li" : ""}`}
               >
                 Register
