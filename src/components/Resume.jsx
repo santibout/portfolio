@@ -17,25 +17,44 @@ const Resume = () => {
             // height="600px"
             // type="application/pdf"
             style={{
-              // height: "500px",
               height: "80vh",
-              width: '-webkit-fill-available',
+              width: "-webkit-fill-available",
               position: "relative",
               left: "50%",
               transform: "translate(-50%)",
-              // left: "0%",
             }}
             data={resume}
           >
-            It appears you don't have a PDF plugin for this browser. No
-            biggie...
+            <p
+              style={{
+                width: "100%",
+                textAlign: "left",
+                margin: "0 auto",
+                position: "relative",
+                right: "25%",
+                transform: "translateX(-25%)",
+              }}
+            >
+              It appears you don't have a PDF plugin for this browser. No
+              biggie...
+            </p>
             <a
               // className="download"
               href={resume}
               download="santibout_resume.pdf"
               style={{ display: "block" }}
             >
-              <button>download resume</button>
+              <button
+                style={{
+                  width: "150px",
+                  position: "relative",
+                  right: "50%",
+                  // transform: "translateX(20%)",
+                  marginTop: "20px",
+                }}
+              >
+                download resume
+              </button>
             </a>
           </object>
         </div>
