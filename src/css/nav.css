@@ -19,7 +19,7 @@
 .menu-collasped a:hover {
   color: #e84118;
 }
-.left-two i:hover + .a-name {
+.left-two li i:hover + .a-name {
   /* display: block; */
   visibility: visible;
 }
@@ -47,7 +47,7 @@
   margin-top: 10px;
 }
 .download {
-  margin-top: 80px;
+  padding-top: 80px;
 }
 /* .download:hover { */
   /* color: #e84118; */

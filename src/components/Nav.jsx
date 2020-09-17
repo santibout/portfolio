@@ -86,12 +86,12 @@ const Nav = (props) => {
               <p className="a-name">projects</p>
             </li>
           </Link>
-          <li>
-            <a href={resume} download="santibout_resume.pdf">
+          <a href={resume} download="santibout_resume.pdf">
+            <li>
               <i className="fas fa-cloud-download-alt download"></i>
               <p className="a-name">download resume</p>
-            </a>
-          </li>
+            </li>
+          </a>
         </ul>
       </div>
     </div>
