@@ -19,16 +19,16 @@
 .menu-collasped a:hover {
   color: #e84118;
 }
-.left-two li:hover .a-name {
+.left-two i:hover + .a-name {
   /* display: block; */
   visibility: visible;
 }
-.download i:hover {
-  color: #e84118;
-}
-.download i:hover + .a-name {
-  visibility: visible;
-}
+/* .download i:hover { */
+  /* color: #e84118; */
+/* } */
+/* .download i:hover + .a-name { */
+  /* visibility: visible; */
+/* } */
 .a-name {
   visibility: hidden;
   font-size: 80%;
@@ -47,15 +47,23 @@
   margin-top: 10px;
 }
 .download {
-  padding-top: 80px;
+  margin-top: 80px;
 }
-.left-two ul li:last-child:hover {
-  color: #e84118;
-}
-.left-two ul li:last-child:hover > p {
-  color: #fff;
-  z-index: 1;
-}
+/* .download:hover { */
+  /* color: #e84118; */
+/* } */
+/* .download:hover + p { */
+  /* color: #fff; */
+  /* z-index: 1; */
+/* } */
+
+/* .left-two ul li:last-child:hover { */
+/* color: #e84118; */
+/* } */
+/* .left-two ul li:last-child:hover > p { */
+/* color: #fff; */
+/* z-index: 1; */
+/* } */
 .menu-collasped li:hover {
   color: #e84118;
 }

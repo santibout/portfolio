@@ -44,7 +44,7 @@ const WorkHistory = () => {
             <p className="work-description">
               Assisted lead instructor with the execution of an evening
               Full-Stack continuing ed course while maintaining a challenging
-              and informative learning environment in support of student’s
+              and informative learning environment in support of students'
               growth and learning.
             </p>
           </div>

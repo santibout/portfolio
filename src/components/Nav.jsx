@@ -77,12 +77,6 @@ const Nav = (props) => {
               <p className="a-name">resume</p>
             </li>
           </Link>
-          {/* <Link to="/portfolio//blog" className={`${path === "/portfolio/blog" ? "active-li" : ""}`}>
-            <li>
-              <i class="fas fa-pen-square"></i>
-              <p className="a-name">blog</p>
-            </li>
-          </Link> */}
           <Link
             to="/portfolio/projects"
             className={`${path === "/portfolio/projects" ? "active-li" : ""}`}
@@ -92,12 +86,12 @@ const Nav = (props) => {
               <p className="a-name">projects</p>
             </li>
           </Link>
-          <a href={resume} download="santibout_resume.pdf">
-            <li className="download">
-              <i className="fas fa-cloud-download-alt"></i>
+          <li>
+            <a href={resume} download="santibout_resume.pdf">
+              <i className="fas fa-cloud-download-alt download"></i>
               <p className="a-name">download resume</p>
-            </li>
-          </a>
+            </a>
+          </li>
         </ul>
       </div>
     </div>

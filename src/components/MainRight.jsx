@@ -33,8 +33,7 @@ const MainRight = () => {
             </div>
             <div className="about-me-description">
               <h3>
-                <span>{years} Years Experience &nbsp; /</span>
-                <span>&nbsp; Full-Stack Web Developer &nbsp; /</span>
+                <span>Full-Stack Web Developer &nbsp;/</span>
                 <span>&nbsp; Huntington Beach, CA</span>
               </h3>
               <p>
