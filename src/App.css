@@ -626,6 +626,26 @@ hr {
   .two-d {
     margin-bottom: 100px;
   }
+  .about-me-image {
+    margin: 0 auto;
+  }
+  .about-me-description {
+    margin-left: 10%;
+  }
+  .about-me {
+    margin: 0 auto;
+  }
+  .two-d {
+    width: 100%;
+  }
+  #work-history h2,
+  .services h2 {
+    display: block;
+    text-align: center;
+  }
+  .work-item {
+    margin: 30px auto;
+  }
 }
 @media only screen and (max-width: 464px) {
   #right-contain {
@@ -747,14 +767,14 @@ hr {
   .resume p {
     transform: translateX(-20%);
   }
-  .map-container { 
+  .map-container {
     margin-bottom: -150px;
-  } 
+  }
 }
 /* @media only screen and (min-height: 1000px) { */
-  /* .map-container { */
-    /* margin-bottom: 30%; */
-  /* } */
+/* .map-container { */
+/* margin-bottom: 30%; */
+/* } */
 /* } */
 @media only screen and (max-width: 768px) and (max-height: 500px) {
   .main-left {
@@ -907,4 +927,3 @@ hr {
     font-size: 70%;
   }
 }
-
