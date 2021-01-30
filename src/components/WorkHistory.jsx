@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/workHistory.css";
+import everyonicImg from "../static/everyonic.jfif";
 
 const WorkHistory = () => {
   return (
@@ -73,8 +74,7 @@ const WorkHistory = () => {
             <div className="work-img">
               <img
                 // className="rescale"
-                src="https://media-exp1.licdn.com/dms/image/C560BAQGTO3FSo1nidQ/company-logo_200_200/0?e=1608768000&v=beta&t=DFSeXKBNsUAEvVfH02erVog2qKTxBTZTIkO932-rujA"
-                alt="everyonic logo"
+                src={ everyonicImg }
               />
             </div>
           </div>
