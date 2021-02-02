@@ -91,7 +91,7 @@ const WorkHistory = () => {
                 real-world sports leagues. Platform allowed users to track all
                 aspects of their bets including wins, losses, statistics
                 balances etc. Main tasks included building a front-end dashboard
-                for both users and admin access and assisting the backend team
+                for both users and admin access and assisting the backend team.
               </p>
             </div>
             <div className="work-img">
