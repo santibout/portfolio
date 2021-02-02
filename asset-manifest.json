@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.5d27c9e2.chunk.css",
-    "main.js": "/portfolio/static/js/main.03859b99.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.03859b99.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.db9a2fda.chunk.css",
+    "main.js": "/portfolio/static/js/main.2122d014.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.2122d014.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
-    "static/js/2.6321e1ff.chunk.js": "/portfolio/static/js/2.6321e1ff.chunk.js",
-    "static/js/2.6321e1ff.chunk.js.map": "/portfolio/static/js/2.6321e1ff.chunk.js.map",
+    "static/js/2.75b14065.chunk.js": "/portfolio/static/js/2.75b14065.chunk.js",
+    "static/js/2.75b14065.chunk.js.map": "/portfolio/static/js/2.75b14065.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.63b1458bbc1910a8534cce8a7e077b96.js": "/portfolio/precache-manifest.63b1458bbc1910a8534cce8a7e077b96.js",
+    "precache-manifest.46d5d526e62c9db645fac7e2021583bc.js": "/portfolio/precache-manifest.46d5d526e62c9db645fac7e2021583bc.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.5d27c9e2.chunk.css.map": "/portfolio/static/css/main.5d27c9e2.chunk.css.map",
-    "static/js/2.6321e1ff.chunk.js.LICENSE.txt": "/portfolio/static/js/2.6321e1ff.chunk.js.LICENSE.txt",
+    "static/css/main.db9a2fda.chunk.css.map": "/portfolio/static/css/main.db9a2fda.chunk.css.map",
+    "static/js/2.75b14065.chunk.js.LICENSE.txt": "/portfolio/static/js/2.75b14065.chunk.js.LICENSE.txt",
     "static/media/Lights-Out.png": "/portfolio/static/media/Lights-Out.c679d8a0.png",
+    "static/media/devmakers.jfif": "/portfolio/static/media/devmakers.82e9bc2b.jfif",
     "static/media/App.css": "/portfolio/static/media/download.95c7767d.png",
     "static/media/everyonic.jfif": "/portfolio/static/media/everyonic.9c0c7971.jfif",
     "static/media/omnifood.png": "/portfolio/static/media/omnifood.01bab7d2.png",
@@ -21,8 +22,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.209c2d7e.js",
-    "static/js/2.6321e1ff.chunk.js",
-    "static/css/main.5d27c9e2.chunk.css",
-    "static/js/main.03859b99.chunk.js"
+    "static/js/2.75b14065.chunk.js",
+    "static/css/main.db9a2fda.chunk.css",
+    "static/js/main.2122d014.chunk.js"
   ]
 }
