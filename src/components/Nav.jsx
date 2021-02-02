@@ -14,12 +14,18 @@ const Nav = (props) => {
   const [animation, addAnimation] = useState();
   function menuClick() {
     const target = document.getElementsByClassName("menu-collasped")[0];
+    const loginLinkOne = document.getElementsByClassName("navLink")[0];
+    const loginLinkTwo = document.getElementsByClassName("navLink")[1];
     if (target.classList.contains("menu-animate")) {
       target.classList.remove("menu-animate");
       target.classList.add("menu-remove-animate");
+      loginLinkOne.classList.add("isDisabled");
+      loginLinkTwo.classList.add("isDisabled");
     } else {
       target.classList.add("menu-animate");
       target.classList.remove("menu-remove-animate");
+      loginLinkOne.classList.remove("isDisabled");
+      loginLinkTwo.classList.remove("isDisabled");
     }
   }
   return (
@@ -31,7 +37,9 @@ const Nav = (props) => {
             <li>
               <Link
                 to="/portfolio/login"
-                className={`${path === "/login" ? "active-li" : ""}`}
+                className={`${
+                  path === "/login" ? "active-li" : ""
+                }isDisabled navLink`}
               >
                 Log In
               </Link>
@@ -39,7 +47,9 @@ const Nav = (props) => {
             <li>
               <Link
                 to="/portfolio/register"
-                className={`${path === "/register" ? "active-li" : ""}`}
+                className={`${
+                  path === "/register" ? "active-li" : ""
+                }isDisabled navLink`}
               >
                 Register
               </Link>

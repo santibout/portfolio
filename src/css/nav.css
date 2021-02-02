@@ -29,6 +29,10 @@
 /* .download i:hover + .a-name { */
   /* visibility: visible; */
 /* } */
+.isDisabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
 .a-name {
   visibility: hidden;
   font-size: 80%;

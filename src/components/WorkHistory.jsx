@@ -1,6 +1,7 @@
 import React from "react";
 import "../css/workHistory.css";
 import everyonicImg from "../static/everyonic.jfif";
+import devMakersImg from '../static/devmakers.jfif';
 
 const WorkHistory = () => {
   return (
@@ -10,6 +11,28 @@ const WorkHistory = () => {
       <h2>Experience</h2>
       <div className="work">
         <div className="work-main">
+          <div className="work-item">
+            <div className="work-item-info">
+              <p className="work-date">
+                <span>Nov 2017</span> - <span>Current</span>
+              </p>
+              <h3 className="work-title">Full-Stack Engineer / Consultnt</h3>
+              <p className="work-place">DevMakers</p>
+              <p className="work-description">
+                DevMakers helps software engineers sharpen their skills as a
+                developer making them more confident and more proficient by
+                teaching critical skills, as well as providing 1 on 1
+                mentorship. I helped develop DevMakers curriculum which allowed
+                DevMakers which they used to conduct their first trial run.
+              </p>
+            </div>
+            <div className="work-img">
+              <img
+                // className="rescale"
+                src={devMakersImg}
+              />
+            </div>
+          </div>
           <div className="work-item">
             <div className="work-item-info">
               <p className="work-date">
@@ -74,7 +97,7 @@ const WorkHistory = () => {
             <div className="work-img">
               <img
                 // className="rescale"
-                src={ everyonicImg }
+                src={everyonicImg}
               />
             </div>
           </div>
