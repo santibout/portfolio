@@ -7,8 +7,10 @@
 .left-two {
   position: relative;
 }
+
 .left-two li {
   z-index: 3;
+  /* margin-left: -70%; */
 }
 .menu-collasped a:link,
 .menu-collasped a:visited {
@@ -24,10 +26,10 @@
   visibility: visible;
 }
 /* .download i:hover { */
-  /* color: #e84118; */
+/* color: #e84118; */
 /* } */
 /* .download i:hover + .a-name { */
-  /* visibility: visible; */
+/* visibility: visible; */
 /* } */
 .isDisabled {
   cursor: not-allowed;
@@ -54,11 +56,11 @@
   padding-top: 80px;
 }
 /* .download:hover { */
-  /* color: #e84118; */
+/* color: #e84118; */
 /* } */
 /* .download:hover + p { */
-  /* color: #fff; */
-  /* z-index: 1; */
+/* color: #fff; */
+/* z-index: 1; */
 /* } */
 
 /* .left-two ul li:last-child:hover { */

@@ -108,9 +108,11 @@ body {
   width: 100%;
   /* z-index: -1; */
 }
-/* .main-container-img:active {
+
+.main-container-img:active {
   transform: scaleY(1);
-} */
+}
+
 .main-right {
   animation: test-animation 0.75s;
   transform-origin: left;
@@ -135,7 +137,7 @@ body {
   width: 100%;
   /* height: 100%; */
   /* overflow-y: scroll; */
-  position: relative;
+  /* position: relative; */
   padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
   box-sizing: content-box; /* So the width will be 100% + 17px */
 }
@@ -201,12 +203,16 @@ about-me {
 .about-me p {
   font-size: 80%;
   color: #6a7a7c;
-  line-height: 1.5;
+  line-height: 1.5 !important;
   margin-top: 15px;
 }
 
 .services {
-  margin-top: 15px;
+  /* margin-top: 5px; */
+}
+
+.services .row {
+  height: 160px;
 }
 h2 {
   font-weight: 300;
@@ -231,9 +237,7 @@ h2 {
   color: #e84118;
   font-size: 140%;
 }
-.services .row {
-  margin-top: 15px;
-}
+
 .skills-text {
   height: 10%;
   border: solid transparent;

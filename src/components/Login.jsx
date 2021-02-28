@@ -5,7 +5,7 @@ const Login = () => {
   return (
     <section id="login">
       <div className="login">
-        <h1>Login Form</h1>
+        <h1 className='mb-3'>Login Form</h1>
         <Form />
       </div>
     </section>
