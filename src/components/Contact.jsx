@@ -11,7 +11,7 @@ const Contact = () => {
     e.preventDefault();
     console.log("form submited");
     axios
-      .post("/contact", {
+      .post("https://santibout-portfolio-server.herokuapp.com/contact", {
         // .post('http://localhost:8080/contact', {
         name,
         email,
