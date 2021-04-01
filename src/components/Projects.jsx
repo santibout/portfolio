@@ -11,7 +11,10 @@ const Projects = () => {
         <h1>Here are some of my projects</h1>
         <div className="projects-list">
           <div className="card-container">
-            <a href="https://santibout.github.io/displayProjectDavid_client/" target="_blank">
+            <a
+              href="https://santibout.github.io/displayProjectDavid_client/"
+              target="_blank"
+            >
               <div className="list-item">
                 <div className="list-item-pic">
                   <img src={cccaa} alt="omnifood" />
@@ -22,7 +25,8 @@ const Projects = () => {
                   </div>
                   <div className="description-body">
                     This project was to simplify the process for College
-                    participants to fill out this form. ______________________
+                    participants to fill out this form.
+                    <p> ______________________</p>
                     This is only a display version and does not reflect the
                     final project. This is to show some of my capabilities as a
                     developer focusing on some 3rd party library to create,
@@ -49,11 +53,11 @@ const Projects = () => {
                     Omnifood is a meal delivery service that services cities all
                     around the world. Omnifood ships ingredients directly to
                     your door so you can prepare healthy meals every week for
-                    you and your family. ______________________ This is only a
-                    display version and does not reflect the final project. This
-                    is to show some of my capabilities as a developer focusing
-                    on my html and css skills. Currently there is no backend
-                    attached to this project.
+                    you and your family. <p> ______________________</p> This is
+                    only a display version and does not reflect the final
+                    project. This is to show some of my capabilities as a
+                    developer focusing on my html and css skills. Currently
+                    there is no backend attached to this project.
                   </div>
                 </div>
               </div>
@@ -76,8 +80,8 @@ const Projects = () => {
                     is switched on. Pressing any of the lights will toggle it
                     and the four adjacent lights. The goal of the puzzle is to
                     switch all the lights off, preferably in as few button
-                    presses as possible. ______________________ In the future I
-                    do plan on making this application mobile friendly
+                    presses as possible. <p> ______________________</p> In the
+                    future I do plan on making this application mobile friendly
                   </div>
                 </div>
               </div>
