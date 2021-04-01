@@ -12,6 +12,7 @@ const Contact = () => {
     console.log("form submited");
     axios
       .post("/contact", {
+        // .post('http://localhost:8080/contact', {
         name,
         email,
         message,
@@ -90,7 +91,7 @@ const Contact = () => {
         </div>
         <hr />
         <h2>Send Me A Message</h2>
-        <form class="needs-validation"  onSubmit={formSubmit}>
+        <form class="needs-validation" onSubmit={formSubmit} noValidate>
           <input
             type="text"
             value={name}

@@ -210,9 +210,9 @@ about-me {
 .services {
   /* margin-top: 5px; */
 }
-
+  
 .services .row {
-  height: 160px;
+  /* height: 160px; */
 }
 h2 {
   font-weight: 300;
