@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.330cc063.chunk.css",
-    "main.js": "/portfolio/static/js/main.9b660c60.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.9b660c60.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.8d3bad7b.chunk.css",
+    "main.js": "/portfolio/static/js/main.e4690f36.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.e4690f36.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
-    "static/js/2.4d57e4af.chunk.js": "/portfolio/static/js/2.4d57e4af.chunk.js",
-    "static/js/2.4d57e4af.chunk.js.map": "/portfolio/static/js/2.4d57e4af.chunk.js.map",
+    "static/js/2.e4e39ba9.chunk.js": "/portfolio/static/js/2.e4e39ba9.chunk.js",
+    "static/js/2.e4e39ba9.chunk.js.map": "/portfolio/static/js/2.e4e39ba9.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.72a27f3891af19c28ef76a28ed079970.js": "/portfolio/precache-manifest.72a27f3891af19c28ef76a28ed079970.js",
+    "precache-manifest.b494f66b4302acb0a85cfeabb9121c5b.js": "/portfolio/precache-manifest.b494f66b4302acb0a85cfeabb9121c5b.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.330cc063.chunk.css.map": "/portfolio/static/css/main.330cc063.chunk.css.map",
-    "static/js/2.4d57e4af.chunk.js.LICENSE.txt": "/portfolio/static/js/2.4d57e4af.chunk.js.LICENSE.txt",
+    "static/css/main.8d3bad7b.chunk.css.map": "/portfolio/static/css/main.8d3bad7b.chunk.css.map",
+    "static/js/2.e4e39ba9.chunk.js.LICENSE.txt": "/portfolio/static/js/2.e4e39ba9.chunk.js.LICENSE.txt",
     "static/media/Lights-Out.png": "/portfolio/static/media/Lights-Out.c679d8a0.png",
+    "static/media/cccaa.PNG": "/portfolio/static/media/cccaa.833d87d7.PNG",
     "static/media/devmakers.jfif": "/portfolio/static/media/devmakers.82e9bc2b.jfif",
     "static/media/App.css": "/portfolio/static/media/download.95c7767d.png",
     "static/media/everyonic.jfif": "/portfolio/static/media/everyonic.9c0c7971.jfif",
@@ -22,8 +23,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.209c2d7e.js",
-    "static/js/2.4d57e4af.chunk.js",
-    "static/css/main.330cc063.chunk.css",
-    "static/js/main.9b660c60.chunk.js"
+    "static/js/2.e4e39ba9.chunk.js",
+    "static/css/main.8d3bad7b.chunk.css",
+    "static/js/main.e4690f36.chunk.js"
   ]
 }
