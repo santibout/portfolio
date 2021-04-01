@@ -41,8 +41,8 @@ const Main = () => {
                       />
                       <Route
                         path="/portfolio/login"
-                        // component={() => <WorkInProgress />}
-                        component={() => <Login />}
+                        component={() => <WorkInProgress />}
+                        // component={() => <Login />}
                       />
                       <Route
                         path="/portfolio/resume"
@@ -50,7 +50,8 @@ const Main = () => {
                       />
                       <Route
                         path="/portfolio/register"
-                        component={() => <Register />}
+                        // component={() => <Register />}
+                        component={() => <WorkInProgress />}
                       />
                       <Route render={() => <div>Not Found</div>} />
                     </Switch>
