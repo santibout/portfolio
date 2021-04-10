@@ -14,9 +14,9 @@ const WorkHistory = () => {
           <div className="work-item">
             <div className="work-item-info">
               <p className="work-date">
-                <span>Nov 2017</span> - <span>Current</span>
+                <span>JAN 2020</span> - <span>Current</span>
               </p>
-              <h3 className="work-title">Full-Stack Engineer / Consultnt</h3>
+              <h3 className="work-title">Full-Stack Engineer / Consultant</h3>
               <p className="work-place">DevMakers</p>
               <p className="work-description">
                 DevMakers helps software engineers sharpen their skills as a

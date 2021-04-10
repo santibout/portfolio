@@ -24,15 +24,17 @@ const Projects = () => {
                     <h2>CCCAA Form</h2>
                   </div>
                   <div className="description-body">
-                    This project was to simplify the process for College
-                    participants to fill out this form.
+                    This is a sample of a project consisting of taking a hard
+                    copy form and converting it to an online platform which then
+                    takes the data submitted and creates and emails out a pdf
                     <p> ______________________</p>
                     This is only a display version and does not reflect the
                     final project. This is to show some of my capabilities as a
                     developer focusing on some 3rd party library to create,
-                    fill, send pdf's as well as send emails In the future I do
+                    fill, send pdf's as well as send emails. In the future I do
                     plan on modifying the form as to add form validation and to
-                    change the address fields to better enhance correctness.
+                    change the address fields to better enhance address
+                    validation.
                   </div>
                 </div>
               </div>
@@ -53,9 +55,9 @@ const Projects = () => {
                     Omnifood is a meal delivery service that services cities all
                     around the world. Omnifood ships ingredients directly to
                     your door so you can prepare healthy meals every week for
-                    you and your family. <p> ______________________</p> This is
-                    only a display version and does not reflect the final
-                    project. This is to show some of my capabilities as a
+                    you and your family. <p> ______________________</p> Omni
+                    food to my knowledge, does not exist. This is only a display
+                    project. This is to showcase some of my capabilities as a
                     developer focusing on my html and css skills. Currently
                     there is no backend attached to this project.
                   </div>
