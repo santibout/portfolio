@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../css/resume.css";
-import resume from "../static/santibout_resume.pdf";
+import resume from "../static/pdfResume.pdf";
 import resumeSnippit from "../static/resume-snippit.png";
 
 const Resume = () => {
@@ -8,7 +8,7 @@ const Resume = () => {
     <section id="resume">
       <div className="resume">
         <div className="resume-container">
-          <a className="download" href={resume} download="santibout_resume.pdf">
+          <a className="download" href={resume} download="samuel_santibout_resume.pdf">
             <p></p>
           </a>
           {/* <div className="resume-image-container"></div> */}

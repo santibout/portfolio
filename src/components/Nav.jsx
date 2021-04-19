@@ -6,7 +6,7 @@ import {
   useLocation,
 } from "react-router-dom";
 import "../css/nav.css";
-import resume from "../static/santibout_resume.pdf";
+import resume from "../static/pdfResume.pdf";
 
 const Nav = (props) => {
   const location = useLocation();
@@ -96,7 +96,7 @@ const Nav = (props) => {
               <p className="a-name">projects</p>
             </li>
           </Link>
-          <a href={resume} download="santibout_resume.pdf">
+          <a href={resume} download="samuel_santibout_resume.pdf">
             <li>
               <i className="fas fa-cloud-download-alt download"></i>
               <p className="a-name">download resume</p>
