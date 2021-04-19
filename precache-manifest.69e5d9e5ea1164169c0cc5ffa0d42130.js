@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3ade691cf451fc6c5e7e719737787baf",
+    "revision": "3c61e8c6d89ee6908f70948248dce023",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "c0c51cb2e1e1f77283a0",
+    "revision": "9d5e043a1937e13223a6",
     "url": "/portfolio/static/css/main.8d3bad7b.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/js/2.e4e39ba9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c0c51cb2e1e1f77283a0",
-    "url": "/portfolio/static/js/main.7740a218.chunk.js"
+    "revision": "9d5e043a1937e13223a6",
+    "url": "/portfolio/static/js/main.4e278688.chunk.js"
   },
   {
     "revision": "7a6cc99bd8f08f9fa6ec",
@@ -48,11 +48,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/omnifood.01bab7d2.png"
   },
   {
-    "revision": "4c9e84f05c615822e3cde6a2c1822834",
-    "url": "/portfolio/static/media/resume-snippit.4c9e84f0.png"
+    "revision": "951880c3305bad0867279107f2da985b",
+    "url": "/portfolio/static/media/pdfResume.951880c3.pdf"
   },
   {
-    "revision": "82cf6edd34ef917450fd885f9c80c5da",
-    "url": "/portfolio/static/media/santibout_resume.82cf6edd.pdf"
+    "revision": "4c9e84f05c615822e3cde6a2c1822834",
+    "url": "/portfolio/static/media/resume-snippit.4c9e84f0.png"
   }
 ]);
