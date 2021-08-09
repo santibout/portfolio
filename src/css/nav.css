@@ -53,7 +53,8 @@
   margin-top: 10px;
 }
 .download {
-  padding-top: 80px;
+  margin-top: 80px;
+  margin-bottom: 0;
 }
 /* .download:hover { */
 /* color: #e84118; */

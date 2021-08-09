@@ -1,3 +1,9 @@
+#map-img {
+  height: 290px;
+  width: 90%;
+  object-fit: none;
+}
+
 #contact {
   margin-top: 60px;
   width: 100%;
@@ -14,7 +20,7 @@
 .map-container {
   position: relative;
   left: -30px;
-  margin-bottom: 30%;
+  margin-bottom: 10px;
 }
 .contact i {
   color: rgb(232, 65, 24);
@@ -28,7 +34,7 @@
   width: 100%;
 }
 .contact-row:first-child {
-  margin-top: 350px;
+  margin-top: 0px;
 }
 .contact-left-one,
 .contact-left-two {
@@ -44,11 +50,9 @@
 }
 
 .main-right hr {
-  height: 12px;
   color: #6a7a7c;
   border: 0;
   box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
-  margin-top: 30px;
   position: relative;
   width: 90%;
 }
@@ -68,7 +72,7 @@
   background: transparent;
   border: none;
   border-bottom: solid #6a7a7c;
-  font-size: 100%;
+  font-size: 80%;
   color: #fff;
   padding: 20px 10px 20px 0;
 }
@@ -80,7 +84,7 @@ textarea {
   width: 60%;
   height: 5%;
   color: #fff;
-  font-size: 100%;
+  font-size: 80%;
 }
 .contact input:focus {
   outline: none;

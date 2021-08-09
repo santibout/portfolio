@@ -1,7 +1,9 @@
 import React, { Component, useState } from "react";
 import MapContainer from "./MapContainer";
 import "../css/contact.css";
+import mapImg from "../static/map.jpeg";
 import axios from "axios";
+
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -65,7 +67,8 @@ const Contact = () => {
     <section id="contact">
       <div className="contact">
         <div className="map-container">
-          <MapContainer />
+          {/* <MapContainer /> */}
+          <img id='map-img'src={mapImg} alt="" />
         </div>
         <div className="contact-info">
           <div className="contact-row">

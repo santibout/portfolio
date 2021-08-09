@@ -12,6 +12,7 @@ const Nav = (props) => {
   const location = useLocation();
   const path = location.pathname;
   const [animation, addAnimation] = useState();
+  const [isDisabled, setIsDisabled] = useState(true);
   function menuClick() {
     const target = document.getElementsByClassName("menu-collasped")[0];
     const loginLinkOne = document.getElementsByClassName("navLink")[0];
@@ -19,13 +20,15 @@ const Nav = (props) => {
     if (target.classList.contains("menu-animate")) {
       target.classList.remove("menu-animate");
       target.classList.add("menu-remove-animate");
-      loginLinkOne.classList.add("isDisabled");
-      loginLinkTwo.classList.add("isDisabled");
+      // loginLinkOne.classList.add("isDisabled");
+      // loginLinkTwo.classList.add("isDisabled");
+      setIsDisabled(true);
     } else {
       target.classList.add("menu-animate");
       target.classList.remove("menu-remove-animate");
-      loginLinkOne.classList.remove("isDisabled");
-      loginLinkTwo.classList.remove("isDisabled");
+      // loginLinkOne.classList.remove("isDisabled");
+      // loginLinkTwo.classList.remove("isDisabled");
+      setIsDisabled(false);
     }
   }
   return (
@@ -37,9 +40,10 @@ const Nav = (props) => {
             <li>
               <Link
                 to="/login"
-                className={`${
-                  path === "/login" ? "active-li" : ""
-                }isDisabled navLink`}
+                className={`${path === "/login" ? "active-li" : ""}
+                  ${isDisabled === true ? "isDisabled" : ""}
+                
+                 navLink`}
               >
                 Log In
               </Link>
@@ -47,9 +51,9 @@ const Nav = (props) => {
             <li>
               <Link
                 to="/register"
-                className={`${
-                  path === "/register" ? "active-li" : ""
-                }isDisabled navLink`}
+                className={`${path === "/register" ? "active-li" : ""}
+                  ${isDisabled === true ? "isDisabled" : ""}
+                 navLink`}
               >
                 Register
               </Link>
@@ -59,10 +63,7 @@ const Nav = (props) => {
       </div>
       <div className="left-two">
         <ul>
-          <Link
-            to="/"
-            className={`${path === "/" ? "active-li" : ""}`}
-          >
+          <Link to="/" className={`${path === "/" ? "active-li" : ""}`}>
             <li>
               {/* <i class="fas fa-user-tie"></i> */}
               <i className="far fa-user-circle"></i>
@@ -78,30 +79,30 @@ const Nav = (props) => {
               <p className="a-name">contact</p>
             </li>
           </Link>
-          <Link
-            to="/resume"
-            className={`${path === "/resume" ? "active-li" : ""}`}
-          >
-            <li>
+          <li>
+            <Link
+              to="/resume"
+              className={`${path === "/resume" ? "active-li" : ""}`}
+            >
               <i className="far fa-file-alt"></i>
               <p className="a-name">resume</p>
-            </li>
-          </Link>
-          <Link
-            to="/projects"
-            className={`${path === "/projects" ? "active-li" : ""}`}
-          >
-            <li>
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/projects"
+              className={`${path === "/projects" ? "active-li" : ""}`}
+            >
               <i className="far fa-file-code"></i>
               <p className="a-name">projects</p>
-            </li>
-          </Link>
-          <a href={resume} download="samuel_santibout_resume.pdf">
-            <li>
+            </Link>
+          </li>
+          <li>
+            <a href={resume} download="samuel_santibout_resume.pdf">
               <i className="fas fa-cloud-download-alt download"></i>
               <p className="a-name">download resume</p>
-            </li>
-          </a>
+            </a>
+          </li>
         </ul>
       </div>
     </div>
