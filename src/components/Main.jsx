@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { BrowserRouter as Router, HashRouter, Route, Link, Switch } from "react-router-dom";
 import One from "./One";
 import Nav from "./Nav";
 import MainMiddle from "./MainMiddle";
@@ -15,7 +15,7 @@ import WorkInProgress from "./WorkInProgress";
 
 const Main = () => {
   return (
-    <Router>
+    <HashRouter basename='/'>
       <Route
         render={({ location }) =>
           console.log(location) || (
@@ -28,28 +28,28 @@ const Main = () => {
                     <Switch location={location}>
                       <Route
                         exact
-                        path="/portfolio/"
+                        path="/"
                         component={() => <MainRight />}
                       />
                       <Route
-                        path="/portfolio/contact"
+                        path="/contact"
                         component={() => <Contact />}
                       />
                       <Route
-                        path="/portfolio/projects"
+                        path="/projects"
                         component={() => <Projects />}
                       />
                       <Route
-                        path="/portfolio/login"
+                        path="/login"
                         component={() => <WorkInProgress />}
                         // component={() => <Login />}
                       />
                       <Route
-                        path="/portfolio/resume"
+                        path="/resume"
                         component={() => <Resume />}
                       />
                       <Route
-                        path="/portfolio/register"
+                        path="/register"
                         // component={() => <Register />}
                         component={() => <WorkInProgress />}
                       />
@@ -62,7 +62,7 @@ const Main = () => {
           )
         }
       />
-    </Router>
+    </HashRouter>
   );
 };
 

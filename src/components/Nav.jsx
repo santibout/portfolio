@@ -36,7 +36,7 @@ const Nav = (props) => {
           <ul>
             <li>
               <Link
-                to="/portfolio/login"
+                to="/login"
                 className={`${
                   path === "/login" ? "active-li" : ""
                 }isDisabled navLink`}
@@ -46,7 +46,7 @@ const Nav = (props) => {
             </li>
             <li>
               <Link
-                to="/portfolio/register"
+                to="/register"
                 className={`${
                   path === "/register" ? "active-li" : ""
                 }isDisabled navLink`}
@@ -60,8 +60,8 @@ const Nav = (props) => {
       <div className="left-two">
         <ul>
           <Link
-            to="/portfolio/"
-            className={`${path === "/portfolio/" ? "active-li" : ""}`}
+            to="/"
+            className={`${path === "/" ? "active-li" : ""}`}
           >
             <li>
               {/* <i class="fas fa-user-tie"></i> */}
@@ -70,8 +70,8 @@ const Nav = (props) => {
             </li>
           </Link>
           <Link
-            to="/portfolio/contact"
-            className={`${path === "/portfolio/contact" ? "active-li" : ""}`}
+            to="/contact"
+            className={`${path === "/contact" ? "active-li" : ""}`}
           >
             <li>
               <i className="fas fa-phone"></i>
@@ -79,8 +79,8 @@ const Nav = (props) => {
             </li>
           </Link>
           <Link
-            to="/portfolio/resume"
-            className={`${path === "/portfolio/resume" ? "active-li" : ""}`}
+            to="/resume"
+            className={`${path === "/resume" ? "active-li" : ""}`}
           >
             <li>
               <i className="far fa-file-alt"></i>
@@ -88,8 +88,8 @@ const Nav = (props) => {
             </li>
           </Link>
           <Link
-            to="/portfolio/projects"
-            className={`${path === "/portfolio/projects" ? "active-li" : ""}`}
+            to="/projects"
+            className={`${path === "/projects" ? "active-li" : ""}`}
           >
             <li>
               <i className="far fa-file-code"></i>
