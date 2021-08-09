@@ -227,6 +227,9 @@ hr {
 }
 
 @media only screen and (max-width: 1000px) {
+  .download {
+    margin-top: 0;
+  }
   .card-container {
     width: 100%;
   }
