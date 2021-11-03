@@ -98,7 +98,7 @@ const Contact = () => {
             className: "toast"
           }}
         />
-        <form className="needs-validation" onSubmit={formSubmit} noValidate>
+        <form  autoComplete='off' className="needs-validation" onSubmit={formSubmit} noValidate>
           <input
             type="text"
             value={name}
