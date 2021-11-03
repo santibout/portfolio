@@ -15,8 +15,8 @@ import WorkInProgress from "./WorkInProgress";
 
 const Main = () => {
   return (
-    <HashRouter basename='/'>
-      <Router>
+    <Router>
+      <HashRouter basename='/'>
         <Route
           render={({ location }) =>
             console.log(location) || (
@@ -63,8 +63,8 @@ const Main = () => {
             )
           }
         />
-      </Router>
-    </HashRouter >
+      </HashRouter >
+    </Router>
   );
 };
 
