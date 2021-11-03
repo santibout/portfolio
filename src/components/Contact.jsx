@@ -3,6 +3,7 @@ import MapContainer from "./MapContainer";
 import "../css/contact.css";
 import mapImg from "../static/map.jpeg";
 import axios from "axios";
+import toast, { Toaster } from 'react-hot-toast';
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -11,64 +12,62 @@ const Contact = () => {
 
   const formSubmit = (e) => {
     e.preventDefault();
-    console.log("form submited");
-    axios
-      .post("https://santibout-portfolio-server.herokuapp.com/contact", {
-        // .post('http://localhost:8080/contact', {
-        name,
-        email,
-        message,
-      })
-      .then(function (res) {
-        console.log("res: ", res);
-      })
-      .catch(function (err) {
-        console.log("err: ", err);
-      });
-    setName("");
-    setEmail("");
-    setMessage("");
-  };
-  const formValidation = () => {
-    const forms = document.querySelectorAll(".needs-validation");
-    Array.prototype.slice.call(forms).forEach(function (form) {
-      form.addEventListener(
-        "submit",
-        function (event) {
-          event.preventDefault();
-          if (!form.checkValidity()) {
-            event.preventDefault();
-            event.stopPropagation();
-          }
-          // form.classList.add("was-validated");
-          axios
-            .post("/contact", {
-              name,
-              email,
-              message,
-            })
-            .then(function (res) {
-              console.log("res: ", res);
-            })
-            .catch(function (err) {
-              console.log("err: ", err);
-            });
-        },
-        false
-      );
+
+    const notify = (msg) => toast(msg, {
+      duration: 3500,
+      position: 'bottom-center',
     });
-    forms[0].classList.remove("was-validated");
-    forms[0].classList.remove("needs-validation");
-    setName("");
-    setEmail("");
-    setMessage("");
+
+    const form = document.querySelectorAll(".needs-validation")[0];
+    if (!form.checkValidity()) {
+      form.classList.add("was-validated");
+    } else {
+      axios
+        .post("https://santibout-portfolio-server.herokuapp.com/contact", {
+          name,
+          email,
+          message,
+        })
+        .then(function (res) {
+          console.log("res: ", res);
+          notify("Message Sent")
+        })
+        .catch(function (err) {
+          console.log("err: ", err);
+          notify("Message Failed To Send")
+
+        });
+
+      // axios
+      //   .post("/contact", {
+      //     name,
+      //     email,
+      //     message,
+      //   })
+      //   .then(function (res) {
+      //     console.log("res: ", res);
+      //     setToastMessage("Message Sent")
+      //   })
+      //   .catch(function (err) {
+      //     console.log("err: ", err);
+      //     setToastMessage("Message Failed To Send")
+      //   });
+
+      //   form.classList.add('was-validated')
+      // }, false)
+      setName("");
+      setEmail("");
+      setMessage("");
+      form.classList.remove("was-validated");
+    }
   };
+
   return (
     <section id="contact">
       <div className="contact">
         <div className="map-container">
           {/* <MapContainer /> */}
-          <img id='map-img'src={mapImg} alt="" />
+          <img id='map-img' src={mapImg} alt="" />
         </div>
         <div className="contact-info">
           <div className="contact-row">
@@ -94,7 +93,12 @@ const Contact = () => {
         </div>
         <hr />
         <h2>Send Me A Message</h2>
-        <form class="needs-validation" onSubmit={formSubmit} noValidate>
+        <Toaster
+          toastOptions={{
+            className: "toast"
+          }}
+        />
+        <form className="needs-validation" onSubmit={formSubmit} noValidate>
           <input
             type="text"
             value={name}
@@ -102,7 +106,7 @@ const Contact = () => {
             placeholder="name"
             required
           />
-          <div class="invalid-feedback">This field is required.</div>
+          <div className="invalid-feedback">This field is required.</div>
           <br />
           <input
             type="email"
@@ -111,7 +115,7 @@ const Contact = () => {
             onChange={(e) => setEmail(e.target.value)}
             required
           />
-          <div class="invalid-feedback">This must be a valid email.</div>
+          <div className="invalid-feedback">This must be a valid email.</div>
           <br />
           <textarea
             name="text"
@@ -123,7 +127,7 @@ const Contact = () => {
             onChange={(e) => setMessage(e.target.value)}
             required
           ></textarea>
-          <div class="invalid-feedback">This field is required.</div>
+          <div className="invalid-feedback">This field is required.</div>
           <button>Send It</button>
         </form>
       </div>
