@@ -15,56 +15,54 @@ import WorkInProgress from "./WorkInProgress";
 
 const Main = () => {
   return (
-    <Router>
-      <HashRouter basename='/'>
-        <Route
-          render={({ location }) =>
-            console.log(location) || (
-              <div className="main-container">
-                <Nav />
-                <MainMiddle />
-                <TransitionGroup id="right-contain">
-                  <CSSTransition key={location.key} classNames="fade" timeout={0}>
-                    <div className="main-right">
-                      <Switch location={location}>
-                        <Route
-                          exact
-                          path="/"
-                          component={() => <MainRight />}
-                        />
-                        <Route
-                          path="/contact"
-                          component={() => <Contact />}
-                        />
-                        <Route
-                          path="/projects"
-                          component={() => <Projects />}
-                        />
-                        <Route
-                          path="/login"
-                          component={() => <WorkInProgress />}
-                        // component={() => <Login />}
-                        />
-                        <Route
-                          path="/resume"
-                          component={() => <Resume />}
-                        />
-                        <Route
-                          path="/register"
-                          // component={() => <Register />}
-                          component={() => <WorkInProgress />}
-                        />
-                        <Route render={() => <div>Not Found</div>} />
-                      </Switch>
-                    </div>
-                  </CSSTransition>
-                </TransitionGroup>
-              </div>
-            )
-          }
-        />
-      </HashRouter >
-    </Router>
+    <HashRouter basename='/'>
+      <Route
+        render={({ location }) =>
+          console.log(location) || (
+            <div className="main-container">
+              <Nav />
+              <MainMiddle />
+              <TransitionGroup id="right-contain">
+                <CSSTransition key={location.pathname} classNames="fade" timeout={0}>
+                  <div className="main-right">
+                    <Switch location={location}>
+                      <Route
+                        exact
+                        path="/"
+                        component={() => <MainRight />}
+                      />
+                      <Route
+                        path="/contact"
+                        component={() => <Contact />}
+                      />
+                      <Route
+                        path="/projects"
+                        component={() => <Projects />}
+                      />
+                      <Route
+                        path="/login"
+                        component={() => <WorkInProgress />}
+                      // component={() => <Login />}
+                      />
+                      <Route
+                        path="/resume"
+                        component={() => <Resume />}
+                      />
+                      <Route
+                        path="/register"
+                        // component={() => <Register />}
+                        component={() => <WorkInProgress />}
+                      />
+                      <Route render={() => <div>Not Found</div>} />
+                    </Switch>
+                  </div>
+                </CSSTransition>
+              </TransitionGroup>
+            </div>
+          )
+        }
+      />
+    </HashRouter >
   );
 };
 
