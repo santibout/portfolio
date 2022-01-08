@@ -1,5 +1,5 @@
 {
-  "homepage": "http://santibout.github.io/portfolio",
+"homepage": "https://santibout.github.io/portfolio",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -10,6 +10,7 @@
     "axios": "^0.20.0",
     "d3": "^6.1.1",
     "google-maps-react": "^2.0.6",
+    "mapbox-gl": "^2.6.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-hot-toast": "^2.1.1",

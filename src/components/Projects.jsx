@@ -1,95 +1,52 @@
-import React from "react";
+import React, { useState } from "react";
 import "../css/projects.css";
-import omnifood from "../static/omnifood.png";
-import lightsout from "../static/Lights-Out.png";
-import cccaa from "../static/cccaa.PNG";
+import ProjectCard from "./ProjectCard";
+import projectData from "../data/projects";
 
 const Projects = () => {
+  let projectCards = projectData.map((project) => {
+    return (
+      <ProjectCard
+        key={project.title}
+        title={project.title}
+        link={project.link}
+        image={project.image}
+        alt={project.alt}
+        description={project.description}
+        disclaimer={project.disclaimer}
+      />
+    );
+  });
+  const [projectList, setProjectList] = useState(projectCards);
+  const [search, setSearch] = useState("");
+
+  const handleChange = (e) => {
+    setSearch(e.target.value);
+    setProjectList(
+      projectCards.filter((project) => {
+        return project.key.toLowerCase().includes(e.target.value.toLowerCase());
+      })
+    );
+  };
+
   return (
     <section id="projects">
       <div className="projects">
-        <h1>Here are some of my projects</h1>
-        <div className="projects-list">
-          <div className="card-container">
-            <a
-              href="https://santibout.github.io/displayProjectDavid_client/"
-              target="_blank"
-            >
-              <div className="list-item">
-                <div className="list-item-pic">
-                  <img src={cccaa} alt="omnifood" />
-                </div>
-                <div className="list-item-description">
-                  <div className="description-title">
-                    <h2>CCCAA Form</h2>
-                  </div>
-                  <div className="description-body">
-                    This is a sample of a project consisting of taking a hard
-                    copy form and converting it to an online platform which then
-                    takes the data submitted and creates and emails out a pdf
-                    <p> ______________________</p>
-                    This is only a display version and does not reflect the
-                    final project. This is to show some of my capabilities as a
-                    developer focusing on some 3rd party library to create,
-                    fill, send pdf's as well as send emails. In the future I do
-                    plan on modifying the form as to add form validation and to
-                    change the address fields to better enhance address
-                    validation.
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div className="card-container">
-            <a href="https://santibout.github.io/omnifood/" target="_blank">
-              <div className="list-item">
-                <div className="list-item-pic">
-                  <img src={omnifood} alt="omnifood" />
-                </div>
-                <div className="list-item-description">
-                  <div className="description-title">
-                    <h2>Omnifood</h2>
-                  </div>
-                  <div className="description-body">
-                    Omnifood is a meal delivery service that services cities all
-                    around the world. Omnifood ships ingredients directly to
-                    your door so you can prepare healthy meals every week for
-                    you and your family. <p> ______________________</p> Omni
-                    food to my knowledge, does not exist. This is only a display
-                    project. This is to showcase some of my capabilities as a
-                    developer focusing on my html and css skills. Currently
-                    there is no backend attached to this project.
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div className="card-container">
-            <a href="https://santibout.github.io/lights-out/" target="_blank">
-              <div className="list-item">
-                <div className="list-item-pic">
-                  <img src={lightsout} alt="omnifood" />
-                </div>
-                <div className="list-item-description">
-                  <div className="description-title">
-                    <h2>Lights Out</h2>
-                  </div>
-                  <div className="description-body">
-                    The game consists of a 5 by 5 grid of lights. When the game
-                    starts, a random number or a stored pattern of these lights
-                    is switched on. Pressing any of the lights will toggle it
-                    and the four adjacent lights. The goal of the puzzle is to
-                    switch all the lights off, preferably in as few button
-                    presses as possible. <p> ______________________</p> In the
-                    future I do plan on making this application mobile friendly
-                  </div>
-                </div>
-              </div>
-            </a>
+        <div className="project-header">
+          <h1>Here are some of my projects</h1>
+          <div className="form-group">
+            <label htmlFor="Search">Search Projects</label>
+            <input
+              id="projectSearch"
+              type="text"
+              // placeholder="search projects"
+              value={search}
+              onChange={handleChange}
+              name="search"
+            />
           </div>
         </div>
+        <div className="projects-list">{projectList}</div>
       </div>
     </section>
   );

@@ -1,22 +1,42 @@
-import React, { Component, useState } from "react";
-import MapContainer from "./MapContainer";
+import React, { Component, useEffect, useState, useRef } from "react";
+import 'mapbox-gl/dist/mapbox-gl.css'
 import "../css/contact.css";
-import mapImg from "../static/map.jpeg";
 import axios from "axios";
-import toast, { Toaster } from 'react-hot-toast';
+import toast, { Toaster } from "react-hot-toast";
+import mapboxgl from "mapbox-gl";
 
 const Contact = () => {
+  mapboxgl.accessToken =
+    "pk.eyJ1Ijoic2FudGlib3V0IiwiYSI6ImNrOXdzMHFxeDBjczgzaXA3N3piMGxiYmQifQ.ofX3Alww6-HrODV0gFhUNw";
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
+  const mapContainer = useRef(null);
+  const map = useRef(null);
+  const [lng, setLng] = useState(-117.8311);
+  const [lat, setLat] = useState(33.7175);
+  const [zoom, setZoom] = useState(7);
+
+  useEffect(() => {
+    if (map.current) return;
+    map.current = new mapboxgl.Map({
+      container: mapContainer.current,
+      style: "mapbox://styles/mapbox/streets-v11",
+      center: [lng, lat],
+      zoom: zoom,
+    });
+  });
+
   const formSubmit = (e) => {
     e.preventDefault();
 
-    const notify = (msg) => toast(msg, {
-      duration: 3500,
-      position: 'bottom-center',
-    });
+    const notify = (msg) =>
+      toast(msg, {
+        duration: 3500,
+        position: "bottom-center",
+      });
 
     const form = document.querySelectorAll(".needs-validation")[0];
     if (!form.checkValidity()) {
@@ -30,31 +50,13 @@ const Contact = () => {
         })
         .then(function (res) {
           console.log("res: ", res);
-          notify("Message Sent")
+          notify("Message Sent");
         })
         .catch(function (err) {
           console.log("err: ", err);
-          notify("Message Failed To Send")
-
+          notify("Message Failed To Send");
         });
 
-      // axios
-      //   .post("/contact", {
-      //     name,
-      //     email,
-      //     message,
-      //   })
-      //   .then(function (res) {
-      //     console.log("res: ", res);
-      //     setToastMessage("Message Sent")
-      //   })
-      //   .catch(function (err) {
-      //     console.log("err: ", err);
-      //     setToastMessage("Message Failed To Send")
-      //   });
-
-      //   form.classList.add('was-validated')
-      // }, false)
       setName("");
       setEmail("");
       setMessage("");
@@ -64,11 +66,8 @@ const Contact = () => {
 
   return (
     <section id="contact">
+      <div ref={mapContainer} className="map-container" />
       <div className="contact">
-        <div className="map-container">
-          {/* <MapContainer /> */}
-          <img id='map-img' src={mapImg} alt="" />
-        </div>
         <div className="contact-info">
           <div className="contact-row">
             <div className="contact-left-one">
@@ -95,10 +94,15 @@ const Contact = () => {
         <h2>Send Me A Message</h2>
         <Toaster
           toastOptions={{
-            className: "toast"
+            className: "toast",
           }}
         />
-        <form  autoComplete='off' className="needs-validation" onSubmit={formSubmit} noValidate>
+        <form
+          autoComplete="off"
+          className="needs-validation"
+          onSubmit={formSubmit}
+          noValidate
+        >
           <input
             type="text"
             value={name}

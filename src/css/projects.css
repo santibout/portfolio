@@ -8,12 +8,23 @@
   display: absolute;
   width: 100%;
   height: 100%;
-  /* overflow-y: scroll; */
+}
+.form-group {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
 }
 .projects h1 {
   text-align: center;
   font-weight: 200;
   margin-bottom: 50px;
+}
+#projectSearch {
+  width: 30%;
+  margin-left: 10px;
+  height: 30px;
+  border-radius: 25px;
+  text-align: center;
 }
 .project-row {
   margin-top: 30px;
@@ -40,7 +51,6 @@
   -ms-transform: skewX(10deg);
   transform: skewX(10deg);
   margin: 0 auto;
-  /* border: 1px solid #e84118; */
 }
 .card-container:hover .list-item {
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -80,15 +90,12 @@
   /* height: 20%; */
 }
 .description-body {
-  height: 80%;
-  overflow: auto;
+  overflow-x: hidden;
   font-size: 65%;
   padding: 10px;
-  /* position: absolute; */
 }
 .card-container {
-  /* background: #e6dfdf41; */
-  padding: 20px;
+  padding: 10px;
   width: 75%;
   height: 275px;
   margin: 30px;

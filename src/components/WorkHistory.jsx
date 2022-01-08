@@ -14,36 +14,36 @@ const WorkHistory = () => {
           <div className="work-item">
             <div className="work-item-info">
               <p className="work-date">
-                <span>JAN 2021</span> - <span>MAR 2021</span>
+                <span>JAN 2021</span> - <span>Current</span>
               </p>
               <h3 className="work-title">Freelance Developer</h3>
               <p className="work-place">DevMakers</p>
               <p className="work-description">
-              Contracted to assist the development team with creating an educational curriculum with a focus on the professional development of software engineers looking to progress in their careers. Additional tasks include creating a company website.
+              Contracted to assist the engineering team with creating an educational curriculum focusing on the professional development of software engineers looking to progress in their careers.
               </p>
             </div>
             <div className="work-img">
               <img
-                // className="rescale"
                 src={devMakersImg}
+                alt="DevMakers Logo"
               />
             </div>
           </div>
           <div className="work-item">
             <div className="work-item-info">
               <p className="work-date">
-                <span>JAN 2020</span> - <span>JAN 2021</span>
+                <span>JAN 2021</span> - <span>SEP 2021</span>
               </p>
               <h3 className="work-title">Full-Stack Developer</h3>
               <p className="work-place">Everyonic</p>
               <p className="work-description">
-              Contracted to assist a team of three developers in the development of two projects. The first was a large full-scale online betting platform that allowed users to bet on competitive fantasy and real-world sports leagues. The second was creating a customized admissions process for the Golden West College’s online registration.
+              Contracted to assist a team of engineers in the development of several projects. I created a customized admissions process for Golden West College’s online registration. Another project was a large full-scale online betting platform that allowed users to bet on competitive fantasy and real-world sports leagues.
               </p>
             </div>
             <div className="work-img">
               <img
-                // className="rescale"
                 src={everyonicImg}
+                alt="everyonic logo"
               />
             </div>
           </div>
