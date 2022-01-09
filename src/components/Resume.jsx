@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "../css/resume.css";
-import resume from "../static/pdfResume.pdf";
-import resumeSnippit from "../static/resume-snippit.png";
+import resume from "../static/samuel_santibout.pdf";
 
 const Resume = () => {
   return (

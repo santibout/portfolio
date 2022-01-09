@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useState, useRef } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import 'mapbox-gl/dist/mapbox-gl.css'
 import "../css/contact.css";
 import axios from "axios";
