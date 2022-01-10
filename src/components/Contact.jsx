@@ -7,7 +7,7 @@ import mapboxgl from "mapbox-gl";
 
 const Contact = () => {
   mapboxgl.accessToken =
-    "pk.eyJ1Ijoic2FudGlib3V0IiwiYSI6ImNrOXdzMHFxeDBjczgzaXA3N3piMGxiYmQifQ.ofX3Alww6-HrODV0gFhUNw";
+    "pk.eyJ1Ijoic2FudGlib3V0IiwiYSI6ImNreTgzaHh1bjAxaG0zMG52amNqbXh5bm0ifQ.dsyktre7Lv2AsuuxyBk6BA";
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
