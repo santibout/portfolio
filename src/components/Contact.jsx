@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import 'mapbox-gl/dist/mapbox-gl.css'
+// import 'mapbox-gl/dist/mapbox-gl.css'
 import "../css/contact.css";
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
@@ -27,7 +27,7 @@ const Contact = () => {
       center: [lng, lat],
       zoom: zoom,
     });
-  });
+  }, [lng, lat, zoom]);
 
   const formSubmit = (e) => {
     e.preventDefault();
