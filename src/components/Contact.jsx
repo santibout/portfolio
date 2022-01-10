@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import "../css/contact.css";
-import 'mapbox-gl/dist/mapbox-gl.css'
+import "mapbox-gl/dist/mapbox-gl.css";
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
 import mapboxgl from "mapbox-gl";
