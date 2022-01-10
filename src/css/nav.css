@@ -54,6 +54,15 @@
   padding: 5px;
   z-index: 1;
 }
+
+a {
+  color: white;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+}
+
 @keyframes menu-drop {
   0% {
     transform: translateY(-50%);

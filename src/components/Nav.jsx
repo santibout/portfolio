@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import {
-  BrowserRouter as Router,
-  Route,
   Link,
   useLocation,
 } from "react-router-dom";
@@ -20,14 +18,14 @@ const Nav = (props) => {
     if (target.classList.contains("menu-animate")) {
       target.classList.remove("menu-animate");
       target.classList.add("menu-remove-animate");
-      // loginLinkOne.classList.add("isDisabled");
-      // loginLinkTwo.classList.add("isDisabled");
+      loginLinkOne.classList.add("isDisabled");
+      loginLinkTwo.classList.add("isDisabled");
       setIsDisabled(true);
     } else {
       target.classList.add("menu-animate");
       target.classList.remove("menu-remove-animate");
-      // loginLinkOne.classList.remove("isDisabled");
-      // loginLinkTwo.classList.remove("isDisabled");
+      loginLinkOne.classList.remove("isDisabled");
+      loginLinkTwo.classList.remove("isDisabled");
       setIsDisabled(false);
     }
   }
