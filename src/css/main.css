@@ -55,6 +55,10 @@ body {
   margin-top: 15px;
 }
 
+.active-li {
+  color: #e84118 !important;
+}
+
 .active-li i {
   color: #e84118 !important;
   font-size: 150%;

@@ -1,5 +1,11 @@
 import React from "react";
-import { BrowserRouter as Router, HashRouter, Route, Link, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  HashRouter,
+  Route,
+  Link,
+  Switch,
+} from "react-router-dom";
 import One from "./One";
 import Nav from "./Nav";
 import MainMiddle from "./MainMiddle";
@@ -15,39 +21,30 @@ import WorkInProgress from "./WorkInProgress";
 
 const Main = () => {
   return (
-    <HashRouter basename='/'>
+    <HashRouter basename="/">
       <Route
         render={({ location }) =>
           console.log(location) || (
             <div className="main-container">
-              <Nav />
+              <Nav {...location} />
               <MainMiddle />
               <TransitionGroup id="right-contain">
-                <CSSTransition key={location.pathname} classNames="fade" timeout={0}>
+                <CSSTransition
+                  key={location.pathname}
+                  classNames="fade"
+                  timeout={0}
+                >
                   <div className="main-right">
                     <Switch location={location}>
-                      <Route
-                        exact
-                        path="/"
-                        component={() => <MainRight />}
-                      />
-                      <Route
-                        path="/contact"
-                        component={() => <Contact />}
-                      />
-                      <Route
-                        path="/projects"
-                        component={() => <Projects />}
-                      />
+                      <Route exact path="/" component={() => <MainRight />} />
+                      <Route path="/contact" component={() => <Contact />} />
+                      <Route path="/projects" component={() => <Projects />} />
                       <Route
                         path="/login"
                         component={() => <WorkInProgress />}
-                      // component={() => <Login />}
+                        // component={() => <Login />}
                       />
-                      <Route
-                        path="/resume"
-                        component={() => <Resume />}
-                      />
+                      <Route path="/resume" component={() => <Resume />} />
                       <Route
                         path="/register"
                         // component={() => <Register />}
@@ -62,7 +59,7 @@ const Main = () => {
           )
         }
       />
-    </HashRouter >
+    </HashRouter>
   );
 };
 

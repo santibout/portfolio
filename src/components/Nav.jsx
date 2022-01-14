@@ -1,31 +1,29 @@
 import React, { useState } from "react";
-import {
-  Link,
-  useLocation,
-} from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "../css/nav.css";
 import resume from "../static/pdfResume.pdf";
 
-const Nav = (props) => {
+const Nav = ({ pathname }) => {
   const location = useLocation();
   const path = location.pathname;
   const [animation, addAnimation] = useState();
   const [isDisabled, setIsDisabled] = useState(true);
+  
   function menuClick() {
     const target = document.getElementsByClassName("menu-collasped")[0];
-    const loginLinkOne = document.getElementsByClassName("navLink")[0];
-    const loginLinkTwo = document.getElementsByClassName("navLink")[1];
+    const loginLink = document.getElementsByClassName("navLink")[0];
+    const registerLink = document.getElementsByClassName("navLink")[1];
     if (target.classList.contains("menu-animate")) {
       target.classList.remove("menu-animate");
       target.classList.add("menu-remove-animate");
-      loginLinkOne.classList.add("isDisabled");
-      loginLinkTwo.classList.add("isDisabled");
+      loginLink.classList.add("isDisabled");
+      registerLink.classList.add("isDisabled");
       setIsDisabled(true);
     } else {
       target.classList.add("menu-animate");
       target.classList.remove("menu-remove-animate");
-      loginLinkOne.classList.remove("isDisabled");
-      loginLinkTwo.classList.remove("isDisabled");
+      loginLink.classList.remove("isDisabled");
+      registerLink.classList.remove("isDisabled");
       setIsDisabled(false);
     }
   }
@@ -38,9 +36,9 @@ const Nav = (props) => {
             <li>
               <Link
                 to="/login"
-                className={`${path === "/login" ? "active-li" : ""}
+                className={
+                  `${path === "/login" ? "active-li" : ""}
                   ${isDisabled === true ? "isDisabled" : ""}
-                
                  navLink`}
               >
                 Log In

@@ -14,7 +14,6 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  // mapboxgl.workerClass = MapboxWorker;
   const mapContainer = useRef(null);
   const map = useRef(null);
   const [lng, setLng] = useState(-117.8311);

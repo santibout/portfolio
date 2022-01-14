@@ -63,6 +63,10 @@ a:visited {
   color: white;
 }
 
+#red {
+  color: blue;
+}
+
 @keyframes menu-drop {
   0% {
     transform: translateY(-50%);
