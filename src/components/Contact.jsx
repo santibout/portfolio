@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
 import "../css/contact.css";
-import "mapbox-gl/dist/mapbox-gl.css";
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
 import mapboxgl from "mapbox-gl";
@@ -13,6 +12,7 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
+  // mapboxgl.workerClass = MapboxWorker;
   const mapContainer = useRef(null);
   const map = useRef(null);
   const [lng, setLng] = useState(-117.8311);
