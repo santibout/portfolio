@@ -1,23 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b1b760c068df9383f7cef873910acbc3",
+    "revision": "f3ba77d1f5196feec62357b838954957",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "9116395f231a6216e31d",
+    "revision": "752f765f56d062c359e6",
     "url": "/portfolio/static/css/main.b9025a91.chunk.css"
   },
   {
-    "revision": "695b42ee1d479f7c04ef",
-    "url": "/portfolio/static/js/2.a397c1f9.chunk.js"
+    "revision": "a5aced8340de4a8eda21",
+    "url": "/portfolio/static/js/2.19c54391.chunk.js"
   },
   {
     "revision": "9b318b6fb13190fe82c0677e9264b3c7",
-    "url": "/portfolio/static/js/2.a397c1f9.chunk.js.LICENSE.txt"
+    "url": "/portfolio/static/js/2.19c54391.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9116395f231a6216e31d",
-    "url": "/portfolio/static/js/main.bb159235.chunk.js"
+    "revision": "752f765f56d062c359e6",
+    "url": "/portfolio/static/js/main.cae5b055.chunk.js"
+  },
+  {
+    "revision": "3eac8c392edb9e4b01d601451a0fb509",
+    "url": "/portfolio/static/js/mapbox-gl-csp-worker.36b093b6.worker.js"
   },
   {
     "revision": "7a6cc99bd8f08f9fa6ec",
