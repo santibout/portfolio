@@ -1,8 +1,10 @@
+/* eslint-disable import/no-webpack-loader-syntax */
 import React, { useEffect, useState, useRef } from "react";
 import "../css/contact.css";
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
 import mapboxgl from "mapbox-gl";
+mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
 
 const Contact = () => {
   mapboxgl.accessToken =

@@ -19,7 +19,8 @@
         "react-hot-toast": "^2.1.1",
         "react-router-dom": "^5.2.0",
         "react-scripts": "3.4.3",
-        "react-transition-group": "^4.4.1"
+        "react-transition-group": "^4.4.1",
+        "worker-loader": "^3.0.8"
     },
     "scripts": {
         "predeploy": "npm run build",
