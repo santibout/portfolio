@@ -35,11 +35,11 @@ const Projects = () => {
         <div className="project-header">
           <h1>Here are some of my projects</h1>
           <div className="form-group">
-            <label htmlFor="Search">Search Projects</label>
+            {/* <label htmlFor="Search">Search Projects</label> */}
             <input
               id="projectSearch"
               type="text"
-              // placeholder="search projects"
+              placeholder="search projects"
               value={search}
               onChange={handleChange}
               name="search"

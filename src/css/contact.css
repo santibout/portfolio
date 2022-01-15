@@ -123,10 +123,6 @@ textarea {
   outline: none;
 }
 
-.contact textarea:focus {
-  outline: none;
-}
-
 .contact form {
   padding-bottom: 30px;
 }

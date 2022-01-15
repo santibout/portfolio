@@ -20,11 +20,20 @@
   margin-bottom: 50px;
 }
 #projectSearch {
+  background-color: transparent;
+  border: none;
+  border-bottom: solid #6a7a7c;
   width: 30%;
   margin-left: 10px;
   height: 30px;
-  border-radius: 25px;
   text-align: center;
+  color: white;
+  text-align: left;
+}
+
+#projectSearch:focus {
+  /* transition: background-color 600000s 0s, color 600000s 0s; */
+  outline: none;
 }
 .project-row {
   margin-top: 30px;
