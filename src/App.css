@@ -296,7 +296,7 @@ hr {
 @media only screen and (max-width: 980px) {
   .main-container {
     flex-direction: column;
-    overflow: hidden;
+    /* overflow: hidden; */
     width: 100%;
   }
   .main-left {
@@ -369,7 +369,7 @@ hr {
     padding-bottom: 0;
   }
   .main-right {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     font-size: 90%;
     height: 100%;
     width: 100%;

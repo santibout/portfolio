@@ -14,9 +14,9 @@ const WorkHistory = () => {
           <div className="work-item">
             <div className="work-item-info">
               <p className="work-date">
-                <span>JAN 2021</span> - <span>Current</span>
+                <span>DEC 2021</span> - <span>Current</span>
               </p>
-              <h3 className="work-title">Freelance Developer</h3>
+              <h3 className="work-title">Software Engineer / Consultant</h3>
               <p className="work-place">DevMakers</p>
               <p className="work-description">
               Contracted to assist the engineering team with creating an educational curriculum focusing on the professional development of software engineers looking to progress in their careers.
@@ -32,9 +32,9 @@ const WorkHistory = () => {
           <div className="work-item">
             <div className="work-item-info">
               <p className="work-date">
-                <span>JAN 2021</span> - <span>SEP 2021</span>
+                <span>JAN 2021</span> - <span>JAN 2022</span>
               </p>
-              <h3 className="work-title">Full-Stack Developer</h3>
+              <h3 className="work-title">Software Engineer</h3>
               <p className="work-place">Everyonic</p>
               <p className="work-description">
               Contracted to assist a team of engineers in the development of several projects. I created a customized admissions process for Golden West College’s online registration. Another project was a large full-scale online betting platform that allowed users to bet on competitive fantasy and real-world sports leagues.
