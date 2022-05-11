@@ -21,7 +21,8 @@ import WorkInProgress from "./WorkInProgress";
 
 const Main = () => {
   return (
-    <HashRouter basename="/">
+    // <HashRouter basename="/">
+    <Router>
       <Route
         render={({ location }) =>
           console.log(location) || (
@@ -59,7 +60,8 @@ const Main = () => {
           )
         }
       />
-    </HashRouter>
+    {/* </HashRouter> */}
+    </Router>
   );
 };
 
