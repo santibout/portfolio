@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a93a384d82db494eee059317b0fc4194",
+    "revision": "769ccad902accfb9eddedb0e81a8dc52",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "63964a91eed39776308f",
-    "url": "/portfolio/static/css/main.e6d15c83.chunk.css"
+    "revision": "6c38037705a1a71180db",
+    "url": "/portfolio/static/css/main.3f3d66f7.chunk.css"
   },
   {
-    "revision": "a5aced8340de4a8eda21",
-    "url": "/portfolio/static/js/2.19c54391.chunk.js"
+    "revision": "fdfe1f51513666f62352",
+    "url": "/portfolio/static/js/2.9aeb9503.chunk.js"
   },
   {
     "revision": "9b318b6fb13190fe82c0677e9264b3c7",
-    "url": "/portfolio/static/js/2.19c54391.chunk.js.LICENSE.txt"
+    "url": "/portfolio/static/js/2.9aeb9503.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "63964a91eed39776308f",
-    "url": "/portfolio/static/js/main.ea58b3e1.chunk.js"
+    "revision": "6c38037705a1a71180db",
+    "url": "/portfolio/static/js/main.ab4f42db.chunk.js"
   },
   {
-    "revision": "3eac8c392edb9e4b01d601451a0fb509",
-    "url": "/portfolio/static/js/mapbox-gl-csp-worker.36b093b6.worker.js"
+    "revision": "fa67bdf44d08176ce925426cc2943705",
+    "url": "/portfolio/static/js/mapbox-gl-csp-worker.e4a152d0.worker.js"
   },
   {
     "revision": "7a6cc99bd8f08f9fa6ec",
@@ -60,7 +60,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/resume-snippit.4c9e84f0.png"
   },
   {
-    "revision": "801afc30418be21741ad0892d9e969fd",
-    "url": "/portfolio/static/media/samuel_santibout.801afc30.pdf"
+    "revision": "2302e5e025a36129511cbed3eb6da7a3",
+    "url": "/portfolio/static/media/samuel_santibout.2302e5e0.pdf"
   }
 ]);
